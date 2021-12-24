@@ -1,0 +1,390 @@
+<odoo>
+    <data noupdate="0">
+
+
+          <record id="program_1" model="cms2.program">
+            <field name="program_name">Augbildung - German - #1</field>
+              <field name="start_date" eval="time.strftime('2019-01-07 00:00:00')" />
+              <field name="end_date" eval="(DateTime.now() + timedelta(days=8)).strftime('%Y-%m-%d %H:%M:%S')" />
+<!--              <field name="status">-1</field>-->
+              <field name="company_id"
+                     ref="data_perusahaan.main_company3"
+              />
+          </record>
+
+          <record id="program_2" model="cms2.program">
+            <field name="program_name">IELTS Intensive</field>
+              <field name="session_id"
+                         eval="[(6, 0, [ref('session_1'),
+                            ref('session_2'),
+                            ref('session_3'),
+                            ref('session_4'),
+                            ref('session_5'),
+                            ])]"
+
+             />
+              <field name="material_id"
+                        eval="[(6, 0, [ref('material_1'),
+                            ref('material_2'),
+                            ref('material_3'),
+                            ref('material_4'),
+                              ref('material_5'),
+
+                            ])]"/>
+
+               <field name="partner_id"
+                        eval="[(6, 0, [ref('data_perusahaan.partner_2'),
+                            ref('data_perusahaan.partner_3'),
+                            ref('data_perusahaan.partner_4'),
+                            ref('data_perusahaan.partner_5'),
+                              ref('data_perusahaan.partner_6'),
+                              ref('data_perusahaan.partner_7'),
+                              ref('data_perusahaan.partner_8'),
+                              ref('data_perusahaan.partner_9')
+
+
+                            ])]"/>
+<!--              <field name="status">1</field>-->
+
+                <field name="start_date" eval="(DateTime.now() + timedelta(days=3)).strftime('%Y-%m-%d %H:%M:%S')" />
+              <field name="end_date" eval="(DateTime.now() + timedelta(days=12)).strftime('%Y-%m-%d %H:%M:%S')" />
+          </record>
+
+          <record id="program_3" model="cms2.program">
+            <field name="program_name">IELTS Regular</field>
+              <field name="start_date" eval="(DateTime.now() + timedelta(days=7)).strftime('%Y-%m-%d %H:%M:%S')" />
+              <field name="end_date" eval="(DateTime.now() + timedelta(days=15)).strftime('%Y-%m-%d %H:%M:%S')" />
+<!--              <field name="status">-1</field>-->
+              <field name="session_id"
+                         eval="[(6, 0, [ref('session_1'),
+                            ref('session_2'),
+                            ref('session_3'),
+                            ref('session_4'),
+                              ref('session_5'),
+
+                            ])]"
+
+             />
+              <field name="material_id"
+                        eval="[(6, 0, [ref('material_1'),
+                            ref('material_2'),
+                            ref('material_3'),
+                            ref('material_4'),
+                              ref('material_5'),
+
+                            ])]"/>
+
+               <field name="partner_id"
+                        eval="[(6, 0, [ref('data_perusahaan.partner_10'),
+                            ref('data_perusahaan.partner_11'),
+                            ref('data_perusahaan.partner_12'),
+                            ref('data_perusahaan.partner_13'),
+                              ref('data_perusahaan.partner_14'),
+                              ref('data_perusahaan.partner_15')
+
+
+                            ])]"/>
+          </record>
+
+
+          <record id ="program_4" model="cms2.program">
+
+              <field name="program_name">IELTS Intensive 3 hrs 2019</field>
+              <field name="start_date" eval="time.strftime('2019-01-07 09:00:00')"/>
+              <field name="end_date" eval="time.strftime('2019-02-07 09:00:00')"/>
+<!--              <field name="status">0</field>-->
+              <field name="partner_id"
+                        eval="[(6, 0, [ref('data_perusahaan.partner_10'),
+                            ref('data_perusahaan.partner_32'),
+                            ref('data_perusahaan.partner_33'),
+                            ref('data_perusahaan.partner_34'),
+                              ref('data_perusahaan.partner_35'),
+                              ref('data_perusahaan.partner_36'),
+                               ref('data_perusahaan.partner_37'),
+                            ref('data_perusahaan.partner_38'),
+                            ref('data_perusahaan.partner_39'),
+                              ref('data_perusahaan.partner_40'),
+                              ref('data_perusahaan.partner_41'),
+                              ref('data_perusahaan.partner_42'),
+                              ref('data_perusahaan.partner_43'),
+
+
+
+                            ])]"/>
+
+              <field name="material_id"
+                        eval="[(6, 0, [ref('material_1'),
+                            ref('material_2'),
+                            ref('material_3'),
+                            ref('material_4'),
+                              ref('material_5'),
+
+                            ])]"/>
+              <field name="session_id"
+                         eval="[(6, 0, [ref('session_1'),
+                            ref('session_2'),
+                            ref('session_3'),
+                            ref('session_4'),
+                              ref('session_5'),
+
+                            ])]"
+
+             />
+
+          </record>
+
+
+
+          <record id="program_5" model="cms2.program">
+
+              <field name="program_name">IELTS Rampack 3 A hrs 2019</field>
+              <field name="start_date" eval="time.strftime('2019-01-05 09:00:00')"/>
+              <field name="end_date" eval="time.strftime('2019-02-05 09:00:00')"/>
+<!--              <field name="status">1</field>-->
+               <field name="partner_id"
+                        eval="[(6, 0, [
+                            ref('data_perusahaan.partner_44'),
+                            ref('data_perusahaan.partner_45'),
+                            ref('data_perusahaan.partner_46'),
+                              ref('data_perusahaan.partner_47'),
+                              ref('data_perusahaan.partner_48'),
+                               ref('data_perusahaan.partner_49'),
+                            ref('data_perusahaan.partner_50')
+
+                            ])]"/>
+              <field name="material_id"
+                        eval="[(6, 0, [ref('material_1'),
+                            ref('material_2'),
+                            ref('material_3'),
+                            ref('material_4'),
+                              ref('material_5'),
+
+                            ])]"/>
+              <field name="session_id"
+                         eval="[(6, 0, [ref('session_1'),
+                            ref('session_2'),
+                            ref('session_3'),
+                            ref('session_4'),
+                              ref('session_5'),
+
+                            ])]"
+
+             />
+
+          </record>
+
+
+          <record id="program_6" model="cms2.program">
+
+              <field name="program_name">IELTS Rampack  A 2019</field>
+              <field name="start_date" eval="time.strftime('2019-01-06 09:00:00')"/>
+              <field name="end_date" eval="time.strftime('2019-02-05 09:00:00')"/>
+<!--              <field name="status">1</field>-->
+
+              <field name="material_id"
+                        eval="[(6, 0, [ref('material_1'),
+                            ref('material_2'),
+                            ref('material_3'),
+                            ref('material_4'),
+                              ref('material_5'),
+
+                            ])]"/>
+              <field name="session_id"
+                         eval="[(6, 0, [ref('session_1'),
+                            ref('session_2'),
+                            ref('session_3'),
+                            ref('session_4'),
+                              ref('session_5'),
+
+                            ])]"
+
+             />
+                <field name="partner_id"
+                        eval="[(6, 0, [
+                            ref('data_perusahaan.partner_51'),
+                            ref('data_perusahaan.partner_52'),
+                            ref('data_perusahaan.partner_53'),
+                              ref('data_perusahaan.partner_54'),
+                              ref('data_perusahaan.partner_55'),
+                               ref('data_perusahaan.partner_56'),
+                            ref('data_perusahaan.partner_57'),
+                             ref('data_perusahaan.partner_58'),
+                              ref('data_perusahaan.partner_59'),
+                              ref('data_perusahaan.partner_60'),
+                               ref('data_perusahaan.partner_61'),
+                            ref('data_perusahaan.partner_62')
+
+
+
+                            ])]"/>
+
+          </record>
+
+
+<!--          <record id="program_7" model="cms2.program">-->
+
+<!--              <field name="program_name">IELTS Super Intensive Public A - UMY Group - CM : Y-R</field>-->
+<!--              <field name="start_date" eval="time.strftime('2020-01-06 09:00:00')"/>-->
+<!--              <field name="end_date" eval="time.strftime('2020-02-05 09:00:00')"/>-->
+<!--              <field name="status">-1</field>-->
+<!--                    <field name="partner_id"-->
+<!--                        eval="[(6, 0, [-->
+<!--                            ref('data_perusahaan.partner_63'),-->
+<!--                            ref('data_perusahaan.partner_64),-->
+<!--                            ref('data_perusahaan.partner_65'),-->
+<!--                              ref('data_perusahaan.partner_66'),-->
+<!--                              ref('data_perusahaan.partner_67'),-->
+<!--                               ref('data_perusahaan.partner_68'),-->
+<!--                            ref('data_perusahaan.partner_69'),-->
+
+
+
+<!--                            ])]"/>-->
+<!--              <field name="material_id"-->
+<!--                        eval="[(6, 0, [ref('material_1'),-->
+<!--                            ref('material_2'),-->
+<!--                            ref('material_3'),-->
+<!--                            ref('material_4'),-->
+<!--                              ref('material_5'),-->
+
+<!--                            ])]"/>-->
+<!--              <field name="session_id"-->
+<!--                         eval="[(6, 0, [ref('session_1'),-->
+<!--                            ref('session_2'),-->
+<!--                            ref('session_3'),-->
+<!--                            ref('session_4'),-->
+<!--                              ref('session_5'),-->
+
+<!--                            ])]"-->
+
+<!--             />-->
+
+
+<!--          </record>-->
+<!--          <record id="program_8" model="cms2.program">-->
+
+<!--              <field name="program_name"> IELTS Custom A 20108</field>-->
+<!--              <field name="start_date" eval="time.strftime('2020-02-08 09:00:00')"/>-->
+<!--              <field name="end_date" eval="time.strftime('2020-02-010 09:00:00')"/>-->
+<!--              <field name="status">-1</field>-->
+
+<!--              <field name="material_id"-->
+<!--                        eval="[(6, 0, [ref('material_1'),-->
+<!--                            ref('material_2'),-->
+<!--                            ref('material_3'),-->
+<!--                            ref('material_4'),-->
+<!--                              ref('material_5'),-->
+
+<!--                            ])]"/>-->
+<!--              <field name="session_id"-->
+<!--                         eval="[(6, 0, [ref('session_1'),-->
+<!--                            ref('session_2'),-->
+<!--                            ref('session_3'),-->
+<!--                            ref('session_4'),-->
+<!--                              ref('session_5'),-->
+
+<!--                            ])]"-->
+
+<!--             />-->
+<!--                <field name="partner_id"-->
+<!--                        eval="[(6, 0, [-->
+<!--                            ref('data_perusahaan.partner_70'),-->
+<!--                            ref('data_perusahaan.partner_71),-->
+<!--                            ref('data_perusahaan.partner_72'),-->
+<!--                              ref('data_perusahaan.partner_73'),-->
+<!--                              ref('data_perusahaan.partner_74'),-->
+<!--                               ref('data_perusahaan.partner_75')-->
+
+
+
+<!--                            ])]"/>-->
+
+
+<!--          </record>-->
+
+<!--          <record id="program_9" model="cms2.program">-->
+
+<!--              <field name="program_name"> TOEFL Intensive a</field>-->
+<!--              <field name="start_date" eval="time.strftime('2020-03-08 09:00:00')"/>-->
+<!--              <field name="end_date" eval="time.strftime('2020-03-010 09:00:00')"/>-->
+<!--              <field name="status">0</field>-->
+
+<!--              <field name="material_id"-->
+<!--                        eval="[(6, 0, [ref('material_1'),-->
+<!--                            ref('material_2'),-->
+<!--                            ref('material_3'),-->
+<!--                            ref('material_4'),-->
+<!--                              ref('material_5'),-->
+
+<!--                            ])]"/>-->
+<!--              <field name="session_id"-->
+<!--                         eval="[(6, 0, [ref('session_1'),-->
+<!--                            ref('session_2'),-->
+<!--                            ref('session_3'),-->
+<!--                            ref('session_4'),-->
+<!--                              ref('session_5'),-->
+
+<!--                            ])]"-->
+
+<!--             />-->
+
+<!--                   <field name="partner_id"-->
+<!--                        eval="[(6, 0, [-->
+<!--                            ref('data_perusahaan.partner_76'),-->
+<!--                            ref('data_perusahaan.partner_77),-->
+<!--                            ref('data_perusahaan.partner_78'),-->
+<!--                              ref('data_perusahaan.partner_79'),-->
+<!--                              ref('data_perusahaan.partner_80'),-->
+<!--                               ref('data_perusahaan.partner_81'),-->
+<!--                                ref('data_perusahaan.partner_82'),-->
+<!--                               ref('data_perusahaan.partner_83'),-->
+
+
+<!--                            ])]"/>-->
+<!--          </record>-->
+
+<!--           <record id="program_10" model="cms2.program">-->
+
+<!--              <field name="program_name">TOEFL Regular B</field>-->
+<!--              <field name="start_date" eval="time.strftime('2020-04-08 09:00:00')"/>-->
+<!--              <field name="end_date" eval="time.strftime('2020-04-010 09:00:00')"/>-->
+<!--              <field name="status">2</field>-->
+
+<!--              <field name="material_id"-->
+<!--                        eval="[(6, 0, [ref('material_1'),-->
+<!--                            ref('material_2'),-->
+<!--                            ref('material_3'),-->
+<!--                            ref('material_4'),-->
+<!--                              ref('material_5'),-->
+
+<!--                            ])]"/>-->
+<!--              <field name="session_id"-->
+<!--                         eval="[(6, 0, [ref('session_1'),-->
+<!--                            ref('session_2'),-->
+<!--                            ref('session_3'),-->
+<!--                            ref('session_4'),-->
+<!--                              ref('session_5'),-->
+
+<!--                            ])]"-->
+
+<!--             />-->
+<!--                <field name="partner_id"-->
+<!--                        eval="[(6, 0, [-->
+<!--                            ref('data_perusahaan.partner_84'),-->
+<!--                            ref('data_perusahaan.partner_85),-->
+<!--                            ref('data_perusahaan.partner_86'),-->
+<!--                              ref('data_perusahaan.partner_87'),-->
+<!--                              ref('data_perusahaan.partner_88'),-->
+<!--                               ref('data_perusahaan.partner_89'),-->
+<!--                                ref('data_perusahaan.partner_90'),-->
+<!--                               ref('data_perusahaan.partner_91'),-->
+<!--                               ref('data_perusahaan.partner_92'),-->
+
+
+<!--                            ])]"/>-->
+
+
+<!--          </record>-->
+
+    </data>
+</odoo>

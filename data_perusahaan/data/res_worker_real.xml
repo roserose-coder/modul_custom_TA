@@ -1,0 +1,82 @@
+<odoo noupdate="0">
+    <data>
+
+
+        <record id="partner_16" model="res.partner">
+
+            <field name="name">Dwi Harini</field>
+            <field name="email">dwiharini@ieducindonesia.com</field>
+        </record>
+        <record id="partner_17" model="res.partner">
+            <field name="name">Usye Rosendah Wangi</field>
+             <field name="email">ur.wangi@ieducindonesia.com</field>
+
+        </record>
+        <record id="partner_18" model="res.partner">
+            <field name="name">Arba'iyah Satriani</field>
+            <field name="email">aan@ieducindonesia.com</field>
+        </record>
+        <record id="partner_19" model="res.partner">
+            <field name="name">Ayu Puspaningrum</field>
+            <field name="email">ayu.puspaningrum@ieducindonesia.com</field>
+        </record>
+        <record id="partner_20" model="res.partner">
+            <field name="name">Ruby Andriansyah</field>
+
+ <field name="email">ruby.andriansyah@ieducindonesia.com</field>
+        </record>
+        <record id="partner_21" model="res.partner">
+            <field name="name">Julia Trisna Ramdhani</field>
+             <field name="email">julia.ramdhani@ieducindonesia.com</field>
+        </record>
+        <record id="partner_22" model="res.partner">
+            <field name="name">Galih Ginanjar</field>
+            <field name="email">galih.ginanjar@ieducindonesia.com</field>
+        </record>
+        <record id="partner_23" model="res.partner">
+            <field name="name">Mariam Muddaris</field>
+             <field name="email">mariam.muddaris@ieducindonesia.com</field>
+        </record>
+        <record id="partner_24" model="res.partner">
+            <field name="name">Mahar Muhammad</field>
+            <field name="email">mahar.muhammad@ieducindonesia.com</field>
+        </record>
+        <record id="partner_25" model="res.partner">
+            <field name="name">Arham Mauriyat</field>
+              <field name="email">arham.mauriyat@ieducindonesia.com</field>
+        </record>
+
+         <record id="partner_26" model="res.partner">
+            <field name="name">Vini Rollianty Holmboe</field>
+               <field name="email">vini.holmboe@ieducindonesia.com</field>
+        </record>
+
+        <record id="partner_27" model="res.partner">
+            <field name="name">Ervien Noviyanti</field>
+              <field name="email">ervien.noviyanti@ieducindonesia.com</field>
+        </record>
+
+
+
+        <record id="partner_28" model="res.partner">
+            <field name="name">Raden Wahyu Yudhi Nandi Prawisda</field>
+            <field name="email">raden.prawisda@ieducindonesia.com</field>
+        </record>
+        <record id="partner_29" model="res.partner">
+            <field name="name">Ahmad Ikhsan Pratama</field>
+             <field name="email">ahmad.pratama@ieducindonesia.com</field>
+        </record>
+
+         <record id="partner_30" model="res.partner">
+            <field name="name">Ika Handayani</field>
+              <field name="email">ika.handayani@ieducindonesia.com</field>
+        </record>
+
+        <record id="partner_31" model="res.partner">
+            <field name="name">Aisha Meinanda</field>
+             <field name="email">aisha.meinanda@ieducindonesia.com</field>
+        </record>
+
+
+    </data>
+</odoo>

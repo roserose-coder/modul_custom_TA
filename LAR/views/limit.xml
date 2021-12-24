@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="lar_action_window">
+           <field name="name">lar window</field>
+           <field name="res_model">limit.invoice</field>
+           <field name="view_mode">tree,form</field>
+         </record>
+
+
+        <record model="ir.ui.view" id="lar_tree_view">
+            <field name="name">lar tree view</field>
+            <field name="model">limit.invoice</field>
+             <field name="arch" type="xml">
+                 <tree>
+                                                <field name="currency_id" invisible="1"/>
+                     <field name="company_id"/>
+                     <field name="partner_id"/>
+                     <field name="priority"/>
+                     <field name="value"/>
+                    <field name="credit_amount"/>
+                 </tree>
+             </field>
+        </record>
+        <record id="lar_form_view" model="ir.ui.view">
+            <field name="name">lar form view</field>
+            <field name="model">limit.invoice</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+
+<!--                                <label for="priority" name="Priority"/>-->
+                            <field name="company_id"/>
+                            <field name="partner_id"/>
+                         <field name="priority"/>
+<!--                                <label for="value" name="Limit"/>-->
+<!--                            <field name="currency_id"/>-->
+                            <field name="credit_amount"/>
+                         <field name="value"/>
+                            <field name="active"/>
+                        </group>
+
+                    </sheet>
+                        <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>`
+                </div>
+                </form>
+
+
+            </field>
+        </record>
+
+
+             <menuitem name="LAR" id="lar_menu_root" action="lar_action_window"/>
+<!--     <menuitem name="LAR" id="lar.menu_root" action="lar.action_window"/>-->
+    </data>
+</odoo>

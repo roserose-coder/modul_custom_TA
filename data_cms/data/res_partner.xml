@@ -1,0 +1,152 @@
+<odoo noupdate="0">
+    <data>
+
+
+
+          <record id="data_perusahaan.partner_2" model="res.partner">
+              <field name="sid">B19AAA11A01</field>
+          </record>
+         <record id="data_perusahaan.partner_3" model="res.partner">
+              <field name="sid">B19AAA11A02</field>
+          </record>
+         <record id="data_perusahaan.partner_4" model="res.partner">
+              <field name="sid">B19AAA11A03</field>
+          </record>
+         <record id="data_perusahaan.partner_5" model="res.partner">
+              <field name="sid">B19AAA11A04</field>
+          </record>
+         <record id="data_perusahaan.partner_6" model="res.partner">
+              <field name="sid">B19AAA11A05</field>
+          </record>
+         <record id="data_perusahaan.partner_7" model="res.partner">
+              <field name="sid">B19AAA11A06</field>
+          </record>
+         <record id="data_perusahaan.partner_8" model="res.partner">
+              <field name="sid">B19AAA11A07</field>
+          </record>
+         <record id="data_perusahaan.partner_9" model="res.partner">
+              <field name="sid">B19AAA11A08</field>
+          </record>
+<!--                           ielts intensive                                           -->
+         <record id="data_perusahaan.partner_10" model="res.partner">
+               <field name="sid">B19AAA13A01</field>
+          </record>
+         <record id="data_perusahaan.partner_11" model="res.partner">
+               <field name="sid">B19AAA13A02</field>
+          </record>
+         <record id="data_perusahaan.partner_12" model="res.partner">
+             <field name="sid">B19AAA13A03</field>
+          </record>
+         <record id="data_perusahaan.partner_13" model="res.partner">
+             <field name="sid">B19AAA13A04</field>
+          </record>
+         <record id="data_perusahaan.partner_14" model="res.partner">
+             <field name="sid">B19AAA13A05</field>
+          </record>
+         <record id="data_perusahaan.partner_15" model="res.partner">
+             <field name="sid">B19AAA13A06</field>
+          </record>
+
+        <!-- ielts intensive 3 hrs -->
+        <record id="data_perusahaan.partner_32" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_33" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_34" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_35" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_36" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_37" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_38" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_39" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_40" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_41" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_42" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+        <record id="data_perusahaan.partner_43" model="res.partner">
+            <field name="sid">B19AAA21A01</field>
+        </record>
+
+          <!-- ielts rampack -->
+        <record id="data_perusahaan.partner_44" model="res.partner">
+            <field name="sid">A19EAO22A01</field>
+        </record>
+        <record id="data_perusahaan.partner_45" model="res.partner">
+            <field name="sid">A19EAO22A02</field>
+        </record>
+        <record id="data_perusahaan.partner_46" model="res.partner">
+            <field name="sid">A19EAO22A03</field>
+        </record>
+        <record id="data_perusahaan.partner_47" model="res.partner">
+            <field name="sid">A19EAO22A04</field>
+        </record>
+        <record id="data_perusahaan.partner_48" model="res.partner">
+             <field name="sid">A19EAO22A05</field>
+        </record>
+        <record id="data_perusahaan.partner_49" model="res.partner">
+            <field name="sid">A19EAO22A06</field>
+        </record>
+        <record id="data_perusahaan.partner_50" model="res.partner">
+            <field name="sid">A19EAO22A07</field>
+        </record>
+
+        <!-- ielts rampack A -->
+        <record id="data_perusahaan.partner_51" model="res.partner">
+            <field name="sid">A19EAA14A01</field>
+        </record>
+        <record id="data_perusahaan.partner_52" model="res.partner">
+            <field name="sid">A19EAA14A02</field>
+        </record>
+        <record id="data_perusahaan.partner_53" model="res.partner">
+            <field name="sid">A19EAA14A03</field>
+        </record>
+        <record id="data_perusahaan.partner_54" model="res.partner">
+            <field name="sid">A19EAA14A04</field>
+        </record>
+        <record id="data_perusahaan.partner_55" model="res.partner">
+            <field name="sid">A19EAA14A05</field>
+        </record>
+        <record id="data_perusahaan.partner_56" model="res.partner">
+            <field name="sid">A19EAA14A06</field>
+        </record>
+        <record id="data_perusahaan.partner_57" model="res.partner">
+            <field name="sid">A19EAA14A07</field>
+        </record>
+        <record id="data_perusahaan.partner_58" model="res.partner">
+            <field name="sid">A19EAA14A08</field>
+        </record>
+        <record id="data_perusahaan.partner_59" model="res.partner">
+            <field name="sid">A19EAA14A09</field>
+        </record>
+        <record id="data_perusahaan.partner_60" model="res.partner">
+            <field name="sid">A19EAA14A10</field>
+        </record>
+        <record id="data_perusahaan.partner_61" model="res.partner">
+            <field name="sid">A19EAA14A11</field>
+        </record>
+        <record id="data_perusahaan.partner_62" model="res.partner">
+            <field name="sid">A19EAA14A12</field>
+        </record>
+
+
+
+    </data>
+</odoo>

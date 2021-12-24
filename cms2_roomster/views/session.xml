@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- Book Form View inherit -->
+    <record id="cms2_session_form_view_form_inh" model="ir.ui.view">
+        <field name="name">cms2.session.form.view</field>
+        <field name="model">cms2.session</field>
+        <field name="inherit_id" ref="cms2.cms2_session_form_view"/>
+        <field name="arch" type="xml">
+            <field name="end_time" position="after">
+                <field name="room_id"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="price"/>
+                <field name="total_price"/>
+            </field>
+        </field>
+    </record>
+
+
+
+
+
+</odoo>

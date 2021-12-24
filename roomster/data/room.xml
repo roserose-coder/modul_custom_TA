@@ -1,0 +1,11 @@
+<odoo>
+    <data>
+        <record model="roomster.room" id="room_1">
+
+            <field name="name">A</field>
+            <field name="responsible" ref="data_perusahaan.user_7"/>
+
+        </record>
+    </data>
+
+</odoo>

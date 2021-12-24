@@ -1,0 +1,46 @@
+<odoo>
+
+
+    <record id="group_flyder_handler" model="res.groups">
+        <field name="name">Flyer Handler</field>
+        <field name="category_id" ref="base.module_category_flyer"/>
+        <field name="users" eval="[(6, 0, [ref('data_perusahaan.user_2'), ref('data_perusahaan.user_7'),ref('base.user_admin')])]"/>
+    </record>
+
+        <record id="account.group_account_invoice" model="res.groups">
+<!--        <field name="name">Billing</field>-->
+<!--        <field name="category_id" ref="base.module_category_accounting_accounting"/>-->
+<!--        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>-->
+                <field name="users" eval="[(6, 0, [ref('data_perusahaan.user_2'),ref('data_perusahaan.user_7'),ref('base.user_admin')])]"/>
+    </record>
+
+
+    <record id="group_flyder_order" model="res.groups">
+        <field name="name">Flyer Order</field>
+        <field name="category_id" ref="base.module_category_flyer"/>
+<!--        <field name="users" eval="[(4, ref('base.group_user'))]"/>-->
+
+<!--         <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>-->
+         <field
+                name="users"
+                eval="[(6, 0, [
+                ref('data_perusahaan.user_1'),
+                 ref('data_perusahaan.user_3'),
+                 ref('data_perusahaan.user_4'),
+                  ref('data_perusahaan.user_5'),
+                 ref('data_perusahaan.user_6'),
+                 ref('data_perusahaan.user_8'),
+                  ref('data_perusahaan.user_9'),
+                    ref('data_perusahaan.user_10'),
+                     ref('data_perusahaan.user_11'),
+                      ref('data_perusahaan.user_12'),
+                       ref('data_perusahaan.user_13'),
+                          ref('data_perusahaan.user_14'),
+                      ref('data_perusahaan.user_15'),
+                       ref('data_perusahaan.user_16')
+
+                 ])]"
+
+        />
+    </record>
+</odoo>

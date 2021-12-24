@@ -1,0 +1,200 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* LAR
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-07-29 14:21+0000\n"
+"PO-Revision-Date: 2021-07-29 21:23+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: id\n"
+"X-Generator: Poedit 3.0\n"
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__active
+msgid "Active"
+msgstr "Aktif"
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__company_id
+msgid "Company"
+msgstr "Perusahaan"
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__currency_id
+msgid "Currency"
+msgstr "Mata Uang"
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__id
+msgid "ID"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_needaction
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_has_error
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: LAR
+#: model:ir.ui.menu,name:LAR.lar_menu_root
+msgid "LAR"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,help:LAR.field_limit_invoice__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__priority
+msgid "Priority"
+msgstr "Prioritas"
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__value
+msgid "Value"
+msgstr "Nilai"
+
+#. module: LAR
+#: model:ir.model.fields,field_description:LAR.field_limit_invoice__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: LAR
+#: model:ir.model.fields,help:LAR.field_limit_invoice__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: LAR
+#: model:ir.actions.act_window,name:LAR.lar_action_window
+msgid "lar window"
+msgstr "Halaman LAR"
+
+#. module: LAR
+#: model:ir.model,name:LAR.model_limit_invoice
+msgid "limit.invoice"
+msgstr ""

@@ -1,0 +1,254 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="flyder.list">
+      <field name="name">flyder list</field>
+      <field name="model">flyder.flyder</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="date_order"/>
+          <field name="status"/>
+<!--            <field name="currency_id" invisible="1"/>-->
+        </tree>
+      </field>
+    </record>
+
+      <record model="ir.ui.view" id="flyder_graph_view">
+           <field name="name">flyder.graph.view</field>
+           <field name="model">flyder.flyder</field>
+           <field name="type">graph</field>
+           <field name="arch" type="xml">
+                 <graph string="Sales Order Lines">
+                     <field name="name" group="True"/>
+                      <field name="qty" group="True"/>
+<!--                      <field name="stage" group ="True" operator="+"/>-->
+                </graph>
+            </field>
+        </record>
+     <record model="ir.ui.view" id="flyder.form">
+        <field name="name">flyder form</field>
+        <field name="model">flyder.flyder</field>
+        <field name="arch" type="xml">
+          <form>
+                      <header>
+                         <field name="status" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"/>
+<!--                           <button name="_check_overdue"  string="Make Preparation" type="object"/>-->
+                      </header>
+<!--              <header>-->
+<!--                    <button name="make_prepare"  string="Make Preparation" type="object"/>-->
+<!--                    <button name="make_pending" string="Make Pending" type="object"/>-->
+<!--                    <button name="make_accepted"  string="Make Accepted" type="object"/>-->
+<!--                    <button name="make_rejected"  string="Make Rejected" type="object"/>-->
+<!--                  <field name="status_order" widget="statusbar"/>-->
+<!--              </header>-->
+              <sheet>
+                   <div class="oe_button_box" name="button_box"  >
+                             <button type="object" class="oe_stat_button" icon="fa-pencil-square-o" name="action_view_partner_invoices">
+                                 <div class="o_form_field o_stat_info">
+                                     <span class="o_stat_value">
+
+                                        <field name="price" group="group_flyder_handler"/>
+                                     </span>
+                                      <span class="o_stat_text">Invoiced</span>
+                                 </div>
+                             </button>
+                        </div>
+                  <group>
+                      <field name="customer"/>
+                      <field name="responsible"/>
+                       <field name="name"/>
+                        <field name="date_order"/>
+                       <field name="deadline"/>
+                      <field name="date_finish"/>
+<!--                        <field name="color" widget="many2many_tags"-->
+<!-- options="{'color_field': 'color'}"/>-->
+<!--                        <field name="status_order"/>-->
+
+                        <field name="currency_id" invisible="1"/>
+                        <field name="price"/>
+                      <field name="popularity" widget="priority"/>
+                    <field name="tag_ids" widget="many2many_tags"
+                     options="{'color_field': 'color', 'no_create_edit':
+                    True}"/>
+                  </group>
+                  <group>
+
+<!--                      <field name="background_color"/>-->
+                      <field name="qty"/>
+                      <field name="data"/>
+                       <field name="description"/>
+                  </group>
+
+              </sheet>
+
+             <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>`
+                    </div>
+
+
+          </form>
+        </field>
+    </record>
+
+      <record model="ir.ui.view" id="flyder_form_minim">
+          <field name="name">flyder form minim</field>
+          <field name="model">flyder.flyder</field>
+          <field name="arch" type="xml">
+              <form>
+                  <group>
+
+                              <field name="name"/>
+                              <field name="qty"/>
+
+                  </group>
+
+
+
+
+
+
+              </form>
+
+          </field>
+
+
+      </record>
+
+       <record id="flyder_kanban_view" model="ir.ui.view">
+            <field name="name">flyder.kanban.view</field>
+            <field name="model">flyder.flyder</field>
+            <field name="arch" type="xml">
+                <kanban class="o_res_partner_kanban"  default_group_by="status"
+                        quick_create_view="flyder.flyder_form_minim"
+                        on_create="quick_create"
+                >
+                    <field name="status"/>
+                    <field name="activity_state"/>
+                     <field name="color" />
+                    <field name="name"/>
+                    <field name="date_order"/>
+                    <field name="qty"/>
+                     <progressbar field="popularity" colors='{"high": "success", "medium": "warning", "low": "danger"}'/>
+                    <templates>
+                        <t t-name="kanban-box">
+<!--                            <div t-attf-class="oe_kanban_global_click">-->
+<!--                                <div class="o_kanban_image">-->
+<!--&lt;!&ndash;                                    <img alt="Avatar" t-att-src="kanban_image('cms2.program', 'program_image',record.id.raw_value)"/>&ndash;&gt;-->
+<!--                                </div>-->
+<!--                                <div class="oe_kanban_details">-->
+<!--                                    <strong class="o_kanban_record_title">-->
+<!--                                        <field name="name"/>-->
+<!--                                    </strong>-->
+
+<!--                                </div>-->
+<!--                            </div>-->
+
+                            <div t-attf-class="#{kanban_color(record.color.raw_value)} oe_kanban_global_click">
+                                   <div class="o_dropdown_kanban dropdown">
+                                        <a class="dropdown-toggle o-no-caret btn" role="button" data-toggle="dropdown">
+                                            <span class="fa fa-ellipsis-v"/>
+                                        </a>
+                                        <div class="dropdown-menu" role="menu">
+                                            <t t-if="widget.editable">
+                                                <a role="menuitem" type="edit" class="dropdown-item">Edit</a>
+                                            </t>
+                                            <t t-if="widget.deletable">
+                                                <a role="menuitem" type="delete" class="dropdown-item">Delete</a>
+                                            </t>
+                                            <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                        </div>
+                                    </div>
+                                  <div class="oe_kanban_content">
+                                       <div class="oe_kanban_card oe_kanban_global_click">
+<!--                                            <div class="o_kanban_image">-->
+<!--                                                 <img alt="Avatar" t-att-src="kanban_image('cms2.program', 'program_image',record.id.raw_value)"/>-->
+<!--                                            </div>-->
+                                            <div class="oe_kanban_details">
+                                                <strong class="o_kanban_record_title">
+                                                    <field name="name"/>
+                                                </strong>
+
+                                            </div>
+                                            <span class="oe_kanban_list_many2many">
+                                                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                                            </span>
+                                            <div>
+                                                <field name="popularity" widget="priority"/>
+                                            </div>
+                                           <div>
+                                             <field name="activity_ids" widget="kanban_activity"/>
+                                            </div>
+                                       </div>
+                                  </div>
+                              </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="flyder.action_window">
+      <field name="name">flyder window</field>
+      <field name="res_model">flyder.flyder</field>
+      <field name="view_mode">tree,form,kanban,graph</field>
+    </record>
+
+
+
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="flyder.action_server">
+      <field name="name">flyder server</field>
+      <field name="model_id" ref="model_flyder_flyder"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Flyder" id="flyder.menu_root" action="flyder.action_window"/>
+
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="flyder.menu_1" parent="flyder.menu_root"/>
+    <menuitem name="Menu 2" id="flyder.menu_2" parent="flyder.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="flyder.menu_1_list" parent="flyder.menu_1"
+              action="flyder.action_window"/>
+    <menuitem name="Server to list" id="flyder" parent="flyder.menu_2"
+              action="flyder.action_server"/>
+-->
+
+
+    <record id="digest_digest_view_form" model="ir.ui.view">
+        <field name="name">digest.digest.view.form.inherit.CMS</field>
+        <field name="model">digest.digest</field>
+        <field name="inherit_id" ref="digest.digest_digest_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='kpi_general']" position="after">
+                <group name="kpi_flyer" string="Flyder">
+                    <field name="kpi_flyer_order"/>
+                    <field name="kpi_flyer_order_2"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+  </data>
+</odoo>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+
+
+
+
+      <record model="ir.actions.act_window" id="cms2.room_action_window">
+          <field name="name">Room List</field>
+          <field name="res_model">roomster.room</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+
+     <record model="ir.ui.view" id="view_room_form">
+        <field name="name">roomster.room.form.inherit</field>
+        <field name="model">roomster.room</field>
+        <field name="inherit_id" ref="roomster.room_form"/>
+
+        <field name="arch" type="xml">
+
+
+            <group position="after">
+                    <group >
+                          <field name="session_id" colspan="4" nolabel="1"/>
+                    </group>
+           </group>
+        </field>
+      </record>
+
+      <menuitem
+              name="Rooms"
+              id="cms2.menu_room"
+              parent="cms2.menu_root"
+              sequence="4"
+              action ="cms2.room_action_window"
+      />
+
+
+</odoo>

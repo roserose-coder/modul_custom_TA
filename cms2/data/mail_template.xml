@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+     <record id="session_attendance_renewed" model="mail.template">
+         <field name="name">Session Attendance Renewed</field>
+         <field name="email_from">${object.session_id.teacher_id.user_id.email}</field>
+         <field name="email_to">${object.partner_id.email}</field>
+         <field name="subject">Session Attendence renewed</field>
+         <field name="model_id" ref="cms2.model_cms2_session_partner"/>
+         <field name="body_html">
+             <![CDATA[
+                 <p>Dear ${object.partner_id.name},</p>
+                 <p>Your session attendance on program titled
+                     <b>${object.program_id.program_name}</b>
+
+                     <br/>
+                     is renewed as  <b
+                    style="color:red;">${object.attendance_name}.</b>
+                 </p>
+                 <br/>
+                 <p>Best regards,
+                 <br/>${object.session_id.teacher_id.user_id.name}</p>
+             ]]>
+        </field>
+     </record>
+    <template id="material_score_qweb">
+         <p>Dear <span t-field="object.partner_id.name"/>,</p>
+         <p>Your score on <span t-field="object.material_id.name"/>
+             <b>
+                 <span t-field="object.score"/>
+             </b>
+         </p>
+         <br/>
+         <p>Best regards,
+            <br/>
+            Teacher
+            </p>
+    </template>
+
+    <template id="teacher_notif_qweb">
+         <p>Dear <span t-field="object.teacher_id.name"/>,</p>
+         <p>Your has been assign to be an instructor on material called <span t-field="object.name"/>
+         </p>
+         <br/>
+         <p>Best regards,
+            <br/>
+            Staff
+            </p>
+    </template>
+
+
+     <template id="teacher_session_notif_qweb">
+         <p>Dear <span t-field="object.teacher_id.name"/>,</p>
+         <p>You has been assign to be an instructor on session called <span t-field="object.session_name"/>
+             This session will be held at <span t-field="object.start_time"/> until  <span t-field="object.end_time"/>
+         </p>
+         <br/>
+         <p>Best regards,
+            <br/>
+            Staff
+            </p>
+    </template>
+
+
+      <template id="director_program_notif_qweb">
+
+         <p>A Program titled <span t-field="object.program_name"/>
+             has been prepared, we wait for your decision
+         </p>
+         <br/>
+         <p>Best regards,
+            <br/>
+            Staff
+            </p>
+    </template>
+
+
+</odoo>

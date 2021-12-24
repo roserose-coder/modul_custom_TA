@@ -1,0 +1,63 @@
+<odoo>
+
+    <data>
+
+          <record id="slide_channel_gre" model="slide.channel">
+            <field name="name">GRE</field>
+            <field name="user_id" ref="base.user_admin"/>
+<!--            <field name="enroll">public</field>-->
+               <field name="enroll">public</field>
+
+<!--              <field name="enroll">payment</field>-->
+<!--             <field name="product_id" ref="product_course_channel_1"/>-->
+            <field name="channel_type">training</field>
+            <field name="allow_comment" eval="True"/>
+<!--            <field name="promote_strategy">latest</field>-->
+            <field name="is_published" eval="True"/>
+<!--            <field name="tag_ids" eval="[(5, 0),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_level_intermediate')),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_role_gardener')),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_other_0'))]"/>-->
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/channel_demo_gardening_2.jpg"/>
+<!--            <field name="description">Learn how to take care of your favorite trees. Learn when to plant, how to manage potted trees, ...</field>-->
+            <field name="create_date" eval="DateTime.now() - relativedelta(days=7)"/>
+        </record>
+
+
+           <record id="slide_channel_gmat" model="slide.channel">
+            <field name="name">GMAT</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="enroll">public</field>
+            <field name="channel_type">training</field>
+            <field name="allow_comment" eval="True"/>
+<!--            <field name="promote_strategy">latest</field>-->
+            <field name="is_published" eval="False"/>
+<!--            <field name="tag_ids" eval="[(5, 0),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_level_intermediate')),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_role_gardener')),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_other_0'))]"/>-->
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/channel_demo_gardening_2.jpg"/>
+<!--            <field name="description">Learn how to take care of your favorite trees. Learn when to plant, how to manage potted trees, ...</field>-->
+            <field name="create_date" eval="DateTime.now() - relativedelta(days=7)"/>
+        </record>
+
+
+
+           <record id="slide_channel_ielts" model="slide.channel">
+            <field name="name">IELTS</field>
+            <field name="user_id" ref="base.user_admin"/>
+            <field name="enroll">public</field>
+            <field name="channel_type">training</field>
+            <field name="allow_comment" eval="True"/>
+<!--            <field name="promote_strategy">latest</field>-->
+            <field name="is_published" eval="False"/>
+<!--            <field name="tag_ids" eval="[(5, 0),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_level_intermediate')),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_role_gardener')),-->
+<!--                                         (4, ref('website_slides.slide_channel_tag_other_0'))]"/>-->
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/channel_demo_gardening_2.jpg"/>
+<!--            <field name="description">Learn how to take care of your favorite trees. Learn when to plant, how to manage potted trees, ...</field>-->
+            <field name="create_date" eval="DateTime.now() - relativedelta(days=7)"/>
+        </record>
+    </data>
+</odoo>

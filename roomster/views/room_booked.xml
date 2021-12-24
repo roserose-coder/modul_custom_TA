@@ -1,0 +1,79 @@
+<odoo>
+
+      <record model="ir.ui.view" id="room_booked_tree_view">
+            <field name="name">roomster.room.booked.tree</field>
+            <field name="model">roomster.booked</field>
+            <field name="arch" type="xml">
+                <tree >
+                   <field name="name"/>
+                    <field name="borrower" widget="many2one_avatar_user" />
+                    <field name="start_date"/>
+                    <field name="currency_id" invisible="1"/>
+                       <field name="end_date"/>
+                </tree>
+            </field>
+        </record>
+
+       <record model="ir.actions.act_window" id="booked_list_action">
+            <field name="name">Book a room </field>
+            <field name="res_model">roomster.booked</field>
+            <field name="view_mode">tree,form,calendar</field>
+             <field name="help" type="html">
+              <p class="o_view_nocontent_smiling_face">
+                Create your First Room !
+              </p>
+            </field>
+     </record>
+
+    <record model="ir.ui.view" id="course_form_view">
+            <field name="name">booked.form</field>
+            <field name="model">roomster.booked</field>
+            <field name="arch" type="xml">
+                <form string="Booked Form" create="false">
+
+                    <sheet>
+                          <div class="oe_button_box" name="button_box" >
+                             <button type="object" class="oe_stat_button" icon="fa-pencil-square-o" name="action_view_partner_invoices">
+                                 <div class="o_form_field o_stat_info">
+                                     <span class="o_stat_value">
+                                        <field name="total_price" group ="group_room_master"/>
+                                     </span>
+                                      <span class="o_stat_text">Invoiced</span>
+                                 </div>
+                             </button>
+                        </div>
+                        <group>
+                            <field name="name"/>
+                            <field name="borrower"/>
+                            <field name="start_date"/>
+                            <field name="end_date"/>
+                             <field name="currency_id" invisible="1"/>
+                            <field name="price_list"/>
+                            <field name="total_price"/>
+                            <field name="active"/>
+
+                        </group>
+
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>`
+                    </div>
+                </form>
+            </field>
+        </record>
+
+    <record id="roomster_booked_calendar" model="ir.ui.view">
+            <field name="name">roomster.room.booked.calendar</field>
+            <field name="model">roomster.booked</field>
+            <field name="arch" type="xml">
+                <calendar string="Service Request"  date_start="start_date"  date_stop="end_date"      event_open_popup="true"   mode="month"     quick_add="False">
+
+                    <field name="name"/>
+                </calendar>
+            </field>
+        </record>
+
+        <menuitem id="booked_menu" name="Book a room"  parent="room_root"  action="booked_list_action" sequence ="11"/>
+</odoo>

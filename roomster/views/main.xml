@@ -1,0 +1,4 @@
+<odoo>
+
+    <menuitem id="room_root" name="Room Renting" sequence="1" />
+</odoo>

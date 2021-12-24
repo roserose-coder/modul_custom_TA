@@ -1,0 +1,86 @@
+<odoo>
+  <data>
+
+
+     <record model="ir.actions.act_window" id="cms2.session_partner_action_window">
+      <field name="name">Session Attendance</field>
+      <field name="res_model">cms2.session.partner</field>
+<!--          <field name="domain">[('teacher_id', '=', uid)]</field>-->
+      <field name="view_mode">tree,graph,form</field>
+    </record>
+
+
+       <record model="ir.ui.view" id="cms2_session_partner_form_view">
+          <field name="name">cms2.session.partner.form.view</field>
+          <field name="model">cms2.session.partner</field>
+          <field name="arch" type="xml">
+            <form>
+                 <header>
+
+<!--                        <button name="book_return_reminder"  string="Make Preparation" type="object"  class="btn-primary"/>-->
+                    </header>
+                <sheet>
+                    <group>
+                                 <field name="program_id" group="True"/>
+
+                                <field name="session_id"/>
+                                <field name ="partner_id"/>
+                                <field name ="attendance_status"/>
+                                <field name="attendance_name" invisible="1"/>
+
+                    </group>
+                </sheet>
+                  <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>`
+                    </div>
+            </form>
+          </field>
+    </record>
+
+   <record model="ir.ui.view" id="cms2_session_partner_tree_view">
+          <field name="name">cms2.session.partner.tree.view</field>
+          <field name="model">cms2.session.partner</field>
+          <field name="arch" type="xml">
+<!--            <tree-->
+<!--                    editable ="bottom"-->
+<!--            >-->
+                <tree
+
+            >
+                <button  name="book_return_reminder" string="send notification" type="object"/>
+                <field name="program_id" group="True"/>
+
+                <field name="session_id"/>
+                <field name ="partner_id"/>
+                <field name ="attendance_status"/>
+            </tree>
+          </field>
+    </record>
+
+     <record model="ir.ui.view" id="cms2_session_partner_graph_view">
+           <field name="name">cms2.session.partner.graph.view</field>
+           <field name="model">cms2.session.partner</field>
+           <field name="type">graph</field>
+           <field name="arch" type="xml">
+                 <graph string="Sales Order Lines">
+                     <field name="program_id" group="True"/>
+                      <field name="session_id" group="True"/>
+                      <field name="attendance_status" group ="true" operator="+"/>
+                </graph>
+            </field>
+        </record>
+
+    <menuitem
+            name="Session Attendance"
+            id="cms2.menu_session_partner"
+            parent="cms2.menu_session"
+            action="cms2.session_partner_action_window"
+            sequence="2"
+    />
+
+
+
+  </data>
+</odoo>

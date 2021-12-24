@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="slide_tag_ielts" model="slide.tag">
+            <field name="name">IELTS</field>
+        </record>
+
+        <record id="slide_tag_listening" model="slide.tag">
+            <field name="name">Listening</field>
+        </record>
+        <record id="slide_tag_speaking" model="slide.tag">
+            <field name="name">Speaking</field>
+        </record>
+        <record id="slide_tag_reading" model="slide.tag">
+            <field name="name">Reading</field>
+        </record>
+        <record id="slide_tag_writing" model="slide.tag">
+            <field name="name">Writing</field>
+        </record>
+
+        <record id="slide_tag_gremat" model="slide.tag">
+            <field name="name">GMAT</field>
+
+        </record>
+        <record id="slide_tag_math" model="slide.tag">
+            <field name="name">Math</field>
+
+        </record>
+        <record id="slide_tag_quantitative_reasoning" model="slide.tag">
+            <field name="name">Quantitative Reasoning</field>
+
+        </record>
+        <record id="slide_tag_verbal_questioning" model="slide.tag">
+            <field name="name">Verbal Questioning</field>
+
+        </record>
+        <record id="slide_tag_diag" model="slide.tag">
+            <field name="name">Diagnostic strength and weakness</field>
+
+        </record>
+        <record id="slide_tag_basic" model="slide.tag">
+            <field name="name">GMAT Basic</field>
+
+        </record>
+
+
+
+        <record id="slide_tag_GRE" model="slide.tag">
+            <field name="name">GRE</field>
+        </record>
+        <record id="slide_tag_started" model="slide.tag">
+            <field name="name">Getting Started</field>
+
+        </record>
+
+        <record id="slide_tag_verbal_reasoning" model="slide.tag">
+            <field name="name">Verbal Reasoning</field>
+
+        </record>
+        <record id="slide_tag_quantitative_reasoning" model="slide.tag">
+            <field name="name">Quantitative Reasoning</field>
+
+        </record>
+        <record id="slide_tag_practice_test" model="slide.tag">
+            <field name="name">Practice Test</field>
+        </record>
+
+         <record id="slide_tag_analytical_beyond" model="slide.tag">
+            <field name="name">Test day and beyond</field>
+        </record>
+
+    </data>
+</odoo>

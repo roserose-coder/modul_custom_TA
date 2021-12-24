@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_master" model="res.groups">
+        <field name="name">Room Master</field>
+        <field name="category_id" ref="base.module_category_roomster"/>
+        <field name="implied_ids" eval="[(4, ref('base.user_admin'))]"/>
+        <field name="users" eval="[(4, ref('base.user_admin'))]"/>
+    </record>
+    <record id="group_booker" model="res.groups">
+        <field name="name">Room Booker</field>
+        <field name="category_id" ref="base.module_category_roomster"/>
+        <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        <field name="users" eval="[(4, ref('base.group_user'))]" />
+    </record>
+
+      <record id="group_self_borrow" model="res.groups">
+          <field name="name">Self borrow</field>
+          <field name="category_id" ref="base.module_category_roomster"/>
+          <field name="implied_ids" eval="[(4, ref('base.group_no_one'))]"/>
+<!--          <field name="users" eval="[(4, ref('base.group_no_one'))]"/>-->
+    </record>
+
+
+</odoo>

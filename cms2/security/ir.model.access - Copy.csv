@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_cms2_program,cms2.program,model_cms2_program,base.group_user,1,1,1,1
+access_cms2_session,cms2.session,model_cms2_session,base.group_user,1,1,1,1
+acl_cms2_director,cms2.program,model_cms2_program,group_director,1,1,1,1

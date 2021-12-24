@@ -1,0 +1,48 @@
+<odoo>
+
+
+       <record model="ir.rule" id="elearning_course_multicompany_rule">
+         <field name="name">Elearning: see only own company course</field>
+         <field name="model_id" ref="model_slide_channel"/>
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+       </record>
+
+        <record model="ir.rule" id="elearning_slide_multicompany_rule">
+         <field name="name">Elearning: see only own company slide</field>
+         <field name="model_id" ref="model_slide_slide"/>
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+       </record>
+
+         <record model="ir.rule" id="elearning_slide_question_multicompany_rule">
+         <field name="name">Elearning: see only own company slide question</field>
+         <field name="model_id" ref="model_slide_question"/>
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+       </record>
+
+
+        <record model="ir.rule" id="elearning_slide_answer_multicompany_rule">
+         <field name="name">Elearning: see only own company slide answer</field>
+         <field name="model_id" ref="model_slide_answer"/>
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+       </record>
+
+
+
+
+</odoo>

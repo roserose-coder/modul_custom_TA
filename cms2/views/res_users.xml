@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+
+
+
+
+      <record model="ir.actions.act_window" id="cms2.teacher_action_window">
+          <field name="name">Teacher List</field>
+          <field name="res_model">res.users</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+     <record model="ir.ui.view" id="view_teacher_form">
+        <field name="name">res.users.form.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_simple_form"/>
+        <field name="arch" type="xml">
+           <group position="after">
+                    <group >
+                        <field name="session_id" />
+                    </group>
+           </group>
+        </field>
+      </record>
+
+
+      <menuitem
+            name="Teacher List"
+            id="cms2.menu_teacher_list"
+            parent="cms2.menu_user"
+            action ="cms2.teacher_action_window"
+            sequence ="2"/>
+
+</odoo>

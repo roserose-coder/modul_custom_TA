@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_flyder_flyder,flyder.flyder,model_flyder_flyder,,1,1,1,1
+access_flyder_stage,flyder.stage,model_flyder_stage,,1,1,1,1
+access_flyder_tag,flyder.tag,model_flyder_tag,,1,1,1,1

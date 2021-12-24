@@ -1,0 +1,27 @@
+<odoo>
+    <data>
+
+        <record id="forum_ielts" model="forum.forum">
+            <field name="name">IELTS Forum</field>
+        </record>
+
+        <record id="forum_GRE" model="forum.forum">
+            <field name="name">GRE Forum</field>
+        </record>
+        <record id="forum_GMAT" model="forum.forum">
+            <field name="name">GMAT Forum</field>
+        </record>
+
+
+
+        <record id="forum_post_ielts_1" model="forum.post">
+            <field name="name">How to learn ielts effectively?</field>
+            <field name="forum_id" ref="forum_ielts"/>
+            <field name="views">2</field>
+            <field name="create_uid" ref="base.user_admin"/>
+            <field name="write_uid" ref="base.user_admin"/>
+            <field name="content" type="html"><p></p></field>
+            <field name="create_date" eval="DateTime.now() - relativedelta(days=31)"/>
+        </record>
+    </data>
+</odoo>

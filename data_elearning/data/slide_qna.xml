@@ -1,0 +1,762 @@
+<odoo>
+    <data>
+        <!-- ielts -->
+        <record id="slide_question_1" model="slide.question">
+            <field name="question">The cork oak has the thickest bark of any living tree</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_ielts_3"/>
+        </record>
+        <record id="slide_question_1_answer_1" model="slide.answer">
+            <field name="text_value">TRUE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_1"/>
+        </record>
+        <record id="slide_question_1_answer_2" model="slide.answer">
+            <field name="text_value">FALSE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_1"/>
+        </record>
+        <record id="slide_question_1_answer_3" model="slide.answer">
+            <field name="text_value">NOT GIVEN</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment">Correct !</field>
+            <field name="question_id" ref="slide_question_1"/>
+        </record>
+        <record id="slide_question_2" model="slide.question">
+            <field name="question">Scientist have developed a synthetic cork with the same cellular structure as natural cork</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_ielts_3"/>
+        </record>
+        <record id="slide_question_2_answer_1" model="slide.answer">
+            <field name="text_value">TRUE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_2"/>
+        </record>
+        <record id="slide_question_2_answer_2" model="slide.answer">
+            <field name="text_value">FALSE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment">Correct !</field>
+            <field name="question_id" ref="slide_question_2"/>
+        </record>
+        <record id="slide_question_2_answer_3" model="slide.answer">
+            <field name="text_value">NOT GIVEN</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_2"/>
+        </record>
+        <record id="slide_question_3" model="slide.question">
+            <field name="question">Individual cork oak trees must be left for 25 years between the first and the second harvest</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_ielts_3"/>
+        </record>
+        <record id="slide_question_3_answer_1" model="slide.answer">
+            <field name="text_value">TRUE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_3"/>
+        </record>
+        <record id="slide_question_3_answer_2" model="slide.answer">
+            <field name="text_value">FALSE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment">Correct !</field>
+            <field name="question_id" ref="slide_question_3"/>
+        </record>
+        <record id="slide_question_3_answer_3" model="slide.answer">
+            <field name="text_value">NOT GIVEN</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_3"/>
+        </record>
+        <record id="slide_question_4" model="slide.question">
+            <field name="question">Cork bark should be stripped in dry atmospheric conditions</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_ielts_3"/>
+        </record>
+        <record id="slide_question_4_answer_1" model="slide.answer">
+            <field name="text_value">TRUE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment">Correct !</field>
+            <field name="question_id" ref="slide_question_4"/>
+        </record>
+        <record id="slide_question_4_answer_2" model="slide.answer">
+            <field name="text_value">FALSE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_4"/>
+        </record>
+        <record id="slide_question_4_answer_3" model="slide.answer">
+            <field name="text_value">NOT GIVEN</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_4"/>
+        </record>
+        <record id="slide_question_5" model="slide.question">
+            <field name="question">The only way to remove the bark from the cork ak trees is by the hand</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_ielts_3"/>
+        </record>
+        <record id="slide_question_5_answer_1" model="slide.answer">
+            <field name="text_value">TRUE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment">Correct !</field>
+            <field name="question_id" ref="slide_question_5"/>
+        </record>
+        <record id="slide_question_5_answer_2" model="slide.answer">
+            <field name="text_value">FALSE</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_5"/>
+        </record>
+        <record id="slide_question_5_answer_3" model="slide.answer">
+            <field name="text_value">NOT GIVEN</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment">Incorrect !</field>
+            <field name="question_id" ref="slide_question_5"/>
+        </record>
+
+
+        <!-- gre -->
+
+        <record id="slide_gre_question_1" model="slide.question">
+            <field name="question">In the passage above, what roles do the boldfaced sentences serve ?</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_2"/>
+        </record>
+
+        <record id="slide_gre_question_1_answer_1" model="slide.answer">
+            <field name="text_value">The first sentence is the main idea, and the second sentence restates the main idea</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1"/>
+        </record>
+        <record id="slide_gre_question_1_answer_2" model="slide.answer">
+            <field name="text_value">The first sentence makes the central argument of the passage, and the second support the argument</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1"/>
+        </record>
+        <record id="slide_gre_question_1_answer_3" model="slide.answer">
+            <field name="text_value">The first sentence is primary argument ant the second sentence is is the secondary argument</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1"/>
+        </record>
+        <record id="slide_gre_question_1_answer_4" model="slide.answer">
+            <field name="text_value">The first sentence is secondary argument and the second sentence is evidence againts that argument</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1"/>
+        </record>
+        <record id="slide_gre_question_1_answer_5" model="slide.answer">
+            <field name="text_value">The first sentence introduces the topic and the second sentence is the conclusion </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1"/>
+        </record>
+
+        <record id="slide_gre_question_2" model="slide.question">
+            <field name="question">According to the passage, all of the following statements are true EXCEPT</field>
+            <field name="sequence">2</field>
+            <field name="slide_id" ref="slide_gre_2"/>
+        </record>
+
+        <record id="slide_gre_question_2_answer_1" model="slide.answer">
+            <field name="text_value">Medical nanotechnology is field of nanotechnology that is 100 percent biological in practice </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2"/>
+        </record>
+        <record id="slide_gre_question_2_answer_2" model="slide.answer">
+            <field name="text_value">Nanotechnology has already led to medical practises that are currently in use </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2"/>
+        </record>
+        <record id="slide_gre_question_2_answer_3" model="slide.answer">
+            <field name="text_value">There are valid concerns regarding the use of nanotechnology </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2"/>
+        </record>
+        <record id="slide_gre_question_2_answer_4" model="slide.answer">
+            <field name="text_value">Most of what happens on the nanoscale is naturally occuring </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2"/>
+        </record>
+        <record id="slide_gre_question_2_answer_5" model="slide.answer">
+            <field name="text_value">Gene therapy would not be possible without medical nanotechnology</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2"/>
+        </record>
+
+        <record id="slide_gre_question_3" model="slide.question">
+            <field name="question">Which one of the following best expresses the main idea of the passage ?</field>
+            <field name="sequence">3</field>
+            <field name="slide_id" ref="slide_gre_2"/>
+        </record>
+
+        <record id="slide_gre_question_3_answer_1" model="slide.answer">
+            <field name="text_value">Explaining why buyers in a given market tend to seek the lowest price on available goods</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3"/>
+        </record>
+        <record id="slide_gre_question_3_answer_2" model="slide.answer">
+            <field name="text_value">Offering a dissenting perpective on an obsolete economic model</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3"/>
+        </record>
+        <record id="slide_gre_question_3_answer_3" model="slide.answer">
+            <field name="text_value">Persuading readers that the model odf the supply and demand is the best method for understanding market forces </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3"/>
+        </record>
+        <record id="slide_gre_question_3_answer_4" model="slide.answer">
+            <field name="text_value">Providing an explanation of the two primary elements of an economic model and how they intersec</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3"/>
+        </record>
+        <record id="slide_gre_question_3_answer_5" model="slide.answer">
+            <field name="text_value">Analyzing the fluctutation of supply and demand within a market </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3"/>
+        </record>
+
+        <record id="slide_gre_question_4" model="slide.question">
+            <field name="question">If the producer of sprockets nearly doubles its prices as described in the passage it follows that </field>
+            <field name="sequence">4</field>
+            <field name="slide_id" ref="slide_gre_2"/>
+        </record>
+
+        <record id="slide_gre_question_4_answer_1" model="slide.answer">
+            <field name="text_value">Buyers in the market will be likely to purchase more of the sprockets being sold</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4"/>
+        </record>
+        <record id="slide_gre_question_4_answer_2" model="slide.answer">
+            <field name="text_value">The price of sprockets will continue to increase </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4"/>
+        </record>
+        <record id="slide_gre_question_4_answer_3" model="slide.answer">
+            <field name="text_value">Buyers in the market will be likely to purchase fewer of the sprockets being sold </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4"/>
+        </record>
+
+
+         <record id="slide_gre_question_1_2" model="slide.question">
+            <field name="question">If a sweater sells for $48 after 25%markdown, what was its original price</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_3"/>
+        </record>
+           <record id="slide_gre_question_1_2_answer_1" model="slide.answer">
+            <field name="text_value">$56</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_2"/>
+        </record>
+           <record id="slide_gre_question_1_2_answer_2" model="slide.answer">
+            <field name="text_value">$60</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_2"/>
+        </record>
+           <record id="slide_gre_question_1_2_answer_3" model="slide.answer">
+            <field name="text_value">$64</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_2"/>
+        </record>
+           <record id="slide_gre_question_1_2_answer_4" model="slide.answer">
+            <field name="text_value">$68</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_2"/>
+        </record>
+           <record id="slide_gre_question_1_2_answer_5" model="slide.answer">
+            <field name="text_value">$72</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_2"/>
+        </record>
+
+
+        <record id="slide_gre_question_2_2" model="slide.question">
+            <field name="question">A hardware store is selling a lawnmower for $300 if the store make a 25% profit on the sale, what is the stores cost for the lawnmower</field>
+            <field name="sequence">2</field>
+            <field name="slide_id" ref="slide_gre_3"/>
+        </record>
+        <record id="slide_gre_question_2_2_answer_1" model="slide.answer">
+            <field name="text_value">$210</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_2"/>
+        </record>
+        <record id="slide_gre_question_2_2_answer_2" model="slide.answer">
+            <field name="text_value">$225</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_2"/>
+        </record>
+        <record id="slide_gre_question_2_2_answer_3" model="slide.answer">
+            <field name="text_value">$240</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_2"/>
+        </record>
+        <record id="slide_gre_question_2_2_answer_4" model="slide.answer">
+            <field name="text_value">$250</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_2"/>
+        </record>
+        <record id="slide_gre_question_2_2_answer_5" model="slide.answer">
+            <field name="text_value">$275</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_2"/>
+        </record>
+
+        <record id="slide_gre_question_3_2" model="slide.question">
+            <field name="question">A retailer marked up the cost of a coat by 20% when she first displayed it in her store. After several weeks, she reduced the selling price of the coat by 25%. if the retailer originally paid $50 for the coat, what will be her loss on the coat at the final price </field>
+            <field name="sequence">3</field>
+            <field name="slide_id" ref="slide_gre_3"/>
+        </record>
+        <record id="slide_gre_question_3_2_answer_1" model="slide.answer">
+            <field name="text_value">$0</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_2"/>
+        </record>
+        <record id="slide_gre_question_3_2_answer_2" model="slide.answer">
+            <field name="text_value">$5</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_2"/>
+        </record>
+        <record id="slide_gre_question_3_2_answer_3" model="slide.answer">
+            <field name="text_value">$10</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_2"/>
+        </record>
+        <record id="slide_gre_question_3_2_answer_4" model="slide.answer">
+            <field name="text_value">$15</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_2"/>
+        </record>
+        <record id="slide_gre_question_3_2_answer_5" model="slide.answer">
+            <field name="text_value">$20</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_2"/>
+        </record>
+
+        <!-- -->
+         <record id="slide_gre_question_1_3" model="slide.question">
+            <field name="question">If x+y = 8 and y - x = -2 then y = </field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_4"/>
+        </record>
+         <record id="slide_gre_question_1_3_answer_1" model="slide.answer">
+            <field name="text_value">-2</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_3"/>
+        </record>
+         <record id="slide_gre_question_1_3_answer_2" model="slide.answer">
+            <field name="text_value">3</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_3"/>
+        </record>
+         <record id="slide_gre_question_1_3_answer_3" model="slide.answer">
+            <field name="text_value">5</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_3"/>
+        </record>
+         <record id="slide_gre_question_1_3_answer_4" model="slide.answer">
+            <field name="text_value">8</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_3"/>
+        </record>
+         <record id="slide_gre_question_1_3_answer_5" model="slide.answer">
+            <field name="text_value">10</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_3"/>
+        </record>
+
+
+        <record id="slide_gre_question_2_3" model="slide.question">
+            <field name="question">If m - n = 5 and 2m +3n =15, then m+n =</field>
+            <field name="sequence">2</field>
+            <field name="slide_id" ref="slide_gre_4"/>
+        </record>
+        <record id="slide_gre_question_2_3_answer_1" model="slide.answer">
+            <field name="text_value">1</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_3"/>
+        </record>
+        <record id="slide_gre_question_2_3_answer_2" model="slide.answer">
+            <field name="text_value">6</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_3"/>
+        </record>
+        <record id="slide_gre_question_2_3_answer_3" model="slide.answer">
+            <field name="text_value">7</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_3"/>
+        </record>
+        <record id="slide_gre_question_2_3_answer_4" model="slide.answer">
+            <field name="text_value">10</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_3"/>
+        </record>
+        <record id="slide_gre_question_2_3_answer_5" model="slide.answer">
+            <field name="text_value">15</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_3"/>
+        </record>
+
+        <record id="slide_gre_question_3_3" model="slide.question">
+            <field name="question">Which of the ordered pairs of numbers(c,d) satisfies the simultaneous equation shown?</field>
+            <field name="sequence">3</field>
+            <field name="slide_id" ref="slide_gre_4"/>
+        </record>
+        <record id="slide_gre_question_3_3_answer_1" model="slide.answer">
+            <field name="text_value">(-2,4)</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_3"/>
+        </record>
+        <record id="slide_gre_question_3_3_answer_2" model="slide.answer">
+            <field name="text_value">(-1,-3)</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_3"/>
+        </record>
+        <record id="slide_gre_question_3_3_answer_3" model="slide.answer">
+            <field name="text_value">(0,2)</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_3"/>
+        </record>
+        <record id="slide_gre_question_3_3_answer_4" model="slide.answer">
+            <field name="text_value">(2,1)</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_3"/>
+        </record>
+        <record id="slide_gre_question_3_3_answer_5" model="slide.answer">
+            <field name="text_value">(3,-9)</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_3"/>
+        </record>
+
+        <!-- -->
+         <record id="slide_gre_question_1_4" model="slide.question">
+            <field name="question">Approximately how much did total revenues increase from 2004 to 2007 </field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_5"/>
+        </record>
+         <record id="slide_gre_question_1_4_answer_1" model="slide.answer">
+            <field name="text_value">$ 0.5 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_4"/>
+        </record>
+         <record id="slide_gre_question_1_4_answer_2" model="slide.answer">
+            <field name="text_value">$ 1.5 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_4"/>
+        </record>
+         <record id="slide_gre_question_1_4_answer_3" model="slide.answer">
+            <field name="text_value">$ 4 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_4"/>
+         </record>
+         <record id="slide_gre_question_1_4_answer_4" model="slide.answer">
+            <field name="text_value">$ 4.5 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_4"/>
+         </record>
+         <record id="slide_gre_question_1_4_answer_5" model="slide.answer">
+            <field name="text_value">$ 5 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_1_4"/>
+        </record>
+
+
+
+
+        <record id="slide_gre_question_2_4" model="slide.question">
+            <field name="question">For the year which profits from food related operation increased over the previous year total revenues were approximately </field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_5"/>
+        </record>
+        <record id="slide_gre_question_2_4_answer_1" model="slide.answer">
+            <field name="text_value">$ 3.5 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_4"/>
+        </record>
+        <record id="slide_gre_question_2_4_answer_2" model="slide.answer">
+            <field name="text_value">$ 4.5 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_4"/>
+        </record>
+        <record id="slide_gre_question_2_4_answer_3" model="slide.answer">
+            <field name="text_value">$ 5.7 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_4"/>
+        </record>
+        <record id="slide_gre_question_2_4_answer_4" model="slide.answer">
+            <field name="text_value">$ 6 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_4"/>
+        </record>
+        <record id="slide_gre_question_2_4_answer_5" model="slide.answer">
+            <field name="text_value">$ 8 billion</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_2_4"/>
+        </record>
+
+
+
+
+         <record id="slide_gre_question_3_4" model="slide.question">
+            <field name="question">In 2008 total profits represented approximately what percent of megacorp’s total revenues</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_5"/>
+        </record>
+         <record id="slide_gre_question_3_4_answer_1" model="slide.answer">
+            <field name="text_value">50%</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_4"/>
+        </record>
+         <record id="slide_gre_question_3_4_answer_2" model="slide.answer">
+            <field name="text_value">20%</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_4"/>
+        </record>
+         <record id="slide_gre_question_3_4_answer_3" model="slide.answer">
+            <field name="text_value">10%</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_4"/>
+        </record>
+         <record id="slide_gre_question_3_4_answer_4" model="slide.answer">
+            <field name="text_value">5%</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_4"/>
+        </record>
+         <record id="slide_gre_question_3_4_answer_5" model="slide.answer">
+            <field name="text_value">1 %</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_3_4"/>
+        </record>
+
+
+         <record id="slide_gre_question_4_4" model="slide.question">
+            <field name="question">For the first year in which revenues from non food related operations surpassed $4.5 billion</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_5"/>
+        </record>
+         <record id="slide_gre_question_4_4_answer_1" model="slide.answer">
+            <field name="text_value">$250 million </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4_4"/>
+        </record>
+         <record id="slide_gre_question_4_4_answer_2" model="slide.answer">
+            <field name="text_value">$450 million </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4_4"/>
+        </record>
+         <record id="slide_gre_question_4_4_answer_3" model="slide.answer">
+            <field name="text_value">$550 million </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4_4"/>
+        </record>
+         <record id="slide_gre_question_4_4_answer_4" model="slide.answer">
+            <field name="text_value">$650 million </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4_4"/>
+        </record>
+         <record id="slide_gre_question_4_4_answer_5" model="slide.answer">
+            <field name="text_value">$800 million </field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_4_4"/>
+        </record>
+
+
+         <record id="slide_gre_question_5_4" model="slide.question">
+            <field name="question">In 2009, how many millions of dollars were revenues from frozen food operations ?</field>
+            <field name="sequence">1</field>
+            <field name="slide_id" ref="slide_gre_5"/>
+        </record>
+
+        <record id="slide_gre_question_5_4_answer_1" model="slide.answer">
+            <field name="text_value">600</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="True"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_5_4"/>
+        </record>
+
+        <record id="slide_gre_question_5_4_answer_2" model="slide.answer">
+            <field name="text_value">60</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_5_4"/>
+        </record>
+            <record id="slide_gre_question_5_4_answer_3" model="slide.answer">
+            <field name="text_value">6</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_5_4"/>
+        </record>
+
+         <record id="slide_gre_question_5_4_answer_4" model="slide.answer">
+            <field name="text_value">63</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_5_4"/>
+        </record>
+
+         <record id="slide_gre_question_5_4_answer_5" model="slide.answer">
+            <field name="text_value">62</field>
+            <field name="sequence">1</field>
+            <field name="is_correct" eval="False"/>
+            <field name="comment"></field>
+            <field name="question_id" ref="slide_gre_question_5_4"/>
+        </record>
+
+
+    </data>
+</odoo>

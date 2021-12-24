@@ -1,0 +1,41 @@
+<odoo>
+    <data>
+
+        <record id="product_course_gre" model="product.product">
+            <field name="name">GRE</field>
+            <field name="standard_price">1000000</field>
+            <field name="list_price">1000000</field>
+            <field name="type">service</field>
+            <field name="invoice_policy">order</field>
+            <field name="is_published" eval="True"/>
+
+<!--            <field name="image_1920" type="base64" file="website_sale_slides/static/img/channel_demo_tree_1.jpg"/>-->
+            <!-- jangan lupa company id -->
+        </record>
+
+
+
+          <record id="product_course_gmat" model="product.product">
+            <field name="name">GMAT</field>
+            <field name="standard_price">1500000</field>
+            <field name="list_price">1500000</field>
+            <field name="type">service</field>
+            <field name="invoice_policy">order</field>
+            <field name="is_published" eval="True"/>
+<!--            <field name="image_1920" type="base64" file="website_sale_slides/static/img/channel_demo_tree_1.jpg"/>-->
+            <!-- jangan lupa company id -->
+        </record>
+
+
+        <record id="product_course_ielts" model="product.product">
+            <field name="name">IELTS</field>
+            <field name="standard_price">2500000</field>
+            <field name="list_price">2500000</field>
+            <field name="type">service</field>
+            <field name="invoice_policy">order</field>
+            <field name="is_published" eval="True"/>
+<!--            <field name="image_1920" type="base64" file="website_sale_slides/static/img/channel_demo_tree_1.jpg"/>-->
+            <!-- jangan lupa company id -->
+        </record>
+    </data>
+</odoo>

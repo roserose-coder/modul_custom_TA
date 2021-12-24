@@ -1,0 +1,100 @@
+<odoo>
+    <data>
+        <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+                eval="[('module', '=', 'base'), ('name', '=', 'main_partner')]" />
+
+        </function>
+            <value eval="{'noupdate': False}" />
+        </function>
+
+         <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value
+                eval="[('module', '=', 'base'), ('name', '=', 'user_admin')]" />
+
+        </function>
+            <value eval="{'noupdate': False}" />
+        </function>
+
+
+
+
+
+
+          <record id="base.main_partner" model="res.partner" context="{'default_is_company': True}">
+            <field name="name">IEDUC INDONESIA</field>
+            <field name="company_id" eval="None"/>
+            <field name="is_company" eval="True"/>
+            <field name="street"> Jl. Batik Kumeli No.7, Sukaluyu, Kec. Cibeunying Kaler</field>
+            <field name="city"> Bandung, Jawa Barat </field>
+            <field name="zip">40123</field>
+            <field name="phone">(022) 2503224</field>
+            <field name="image_1920" type="base64" file="data_perusahaan/static/img/ieduc.png"/>
+        </record>
+
+           <record id="base.main_company" model="res.company">
+            <field name="name">IEDUC INDONESIA</field>
+            <field name="partner_id" ref="base.main_partner"/>
+            <field name="currency_id" ref="base.IDR"/>
+            <field name="favicon" model="res.company" eval="obj()._get_default_favicon(original=True)"/>
+        </record>
+
+
+
+        <record id="main_partner3" model="res.partner" context="{'default_is_company': True}">
+            <field name="name">GLC networks</field>
+            <field name="email">contact@glcnetworks.com</field>
+            <field name="company_id" eval="None"/>
+            <field name="is_company" eval="True"/>
+            <field name="street"> Jl. Batik Kumeli No.7, Sukaluyu, Kec. Cibeunying Kaler</field>
+            <field name="city"> Bandung, Jawa Barat </field>
+            <field name="zip">40123</field>
+            <field name="phone">+62 22-21234500</field>
+            <field name="image_1920" type="base64" file="data_perusahaan/static/img/glc.png"/>
+        </record>
+
+
+        <record id="main_company3" model="res.company">
+            <field name="name">GLC networks</field>
+            <field name="partner_id" ref="main_partner3"/>
+            <field name="currency_id" ref="base.IDR"/>
+            <field name="favicon" model="res.company" eval="obj()._get_default_favicon(original=True)"/>
+        </record>
+
+
+
+        <record id="main_partner4" model="res.partner" context="{'default_is_company': True}">
+            <field name="name">Kamaratas</field>
+
+
+            <field name="company_id" eval="None"/>
+            <field name="is_company" eval="True"/>
+            <field name="street">  Jl. Gedebage Selatan No.92, Cisaranten Kidul, Kec. Gedebage</field>
+            <field name="city"> Bandung, Jawa Barat </field>
+            <field name="zip">40295</field>
+            <field name="phone">+62 22-21234500</field>
+            <field name="image_1920" type="base64" file="base/static/img/res_company_logo.png"/>
+        </record>
+
+
+        <record id="main_company4" model="res.company">
+            <field name="name">Kamaratas</field>
+            <field name="partner_id" ref="main_partner4"/>
+            <field name="currency_id" ref="base.IDR"/>
+            <field name="favicon" model="res.company" eval="obj()._get_default_favicon(original=True)"/>
+        </record>
+
+
+
+        <record id="base.user_admin" model="res.users">
+    <!-- change fields here -->
+              <field name="company_ids" eval="[(6,0,[
+                ref('base.main_company'),
+                 ref('main_company3'),
+                  ref('main_company4'),]
+                )]"/>
+        </record>
+    </data>
+</odoo>

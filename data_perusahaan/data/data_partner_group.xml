@@ -1,0 +1,38 @@
+<odoo>
+
+
+          <record model="res.groups" id="base.group_multi_company">
+<!--            <field name="category_id" ref="module_category_usability"/>-->
+              <field name="users" eval="[(6, 0, [
+                ref('user_1'),
+                ref('user_2'),
+                ref('user_3'),
+                ref('user_4'),
+                ref('user_5'),
+                ref('user_6'),
+                ref('user_7'),
+                ref('user_8'),
+                ref('user_9'),
+                ref('user_10'),
+                ref('user_11'),
+                ref('user_12'),
+                ref('user_13'),
+                ref('user_14'),
+                ref('user_15'),
+                ref('user_16'),
+
+
+
+                ref('base.user_admin'),
+                ])]"/>
+         </record>
+
+
+<!--          <record id="user_16" model="resusers">-->
+<!--&lt;!&ndash;              <field name="login">aishameinanda@ieducindonesiacom</field>&ndash;&gt;-->
+<!--&lt;!&ndash;              <field name="password">password</field>&ndash;&gt;-->
+<!--&lt;!&ndash;              <field name="company_id" eval="[(4, ref('main_company4'))]"/>&ndash;&gt;-->
+<!--              <field name="company_id" ref="main_company4"/>-->
+<!--&lt;!&ndash;              <field name="partner_id" ref="partner_31" />&ndash;&gt;-->
+<!--            </record>-->
+</odoo>

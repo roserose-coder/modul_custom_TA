@@ -1,0 +1,344 @@
+<odoo noupdate="0">
+    <data>
+        <!-- jerman -->
+         <record id="partner_1" model="res.partner">
+            <field name="name">Halmar Prayitama</field>
+          </record>
+        <!--                           ielts intensive               2019                            -->
+         <record id="partner_2" model="res.partner">
+             <field name="name">Asti Damayanti</field>
+              <field name="mobile">087822812191</field>
+<!--              <field name="sid">B19AAA11A01</field>-->
+          </record>
+         <record id="partner_3" model="res.partner">
+            <field name="name">Fadhilatunnaisa Nurhadiza</field>
+              <field name="mobile">081223540146</field>
+<!--              <field name="sid">B19AAA11A02</field>-->
+          </record>
+         <record id="partner_4" model="res.partner">
+            <field name="name">Ibnu Habibie</field>
+              <field name="mobile">081223069185</field>
+<!--              <field name="sid">B19AAA11A03</field>-->
+          </record>
+         <record id="partner_5" model="res.partner">
+            <field name="name">Irma Ambarini Darmawan</field>
+              <field name="mobile">08116929496</field>
+<!--              <field name="sid">B19AAA11A04</field>-->
+          </record>
+         <record id="partner_6" model="res.partner">
+            <field name="name">La Ode Muh. Faisal Wikra</field>
+              <field name="mobile">081341560405</field>
+<!--              <field name="sid">B19AAA11A05</field>-->
+          </record>
+         <record id="partner_7" model="res.partner">
+            <field name="name">Muhamad Imam Pamungkas</field>
+              <field name="mobile">085222993299</field>
+<!--              <field name="sid">B19AAA11A06</field>-->
+          </record>
+         <record id="partner_8" model="res.partner">
+            <field name="name">Rizky Amalia</field>
+              <field name="mobile">081259263811</field>
+<!--              <field name="sid">B19AAA11A07</field>-->
+          </record>
+         <record id="partner_9" model="res.partner">
+            <field name="name">Azrina Sabilla</field>
+<!--              <field name="sid">B19AAA11A08</field>-->
+          </record>
+<!--                           ielts intensive                                           -->
+         <record id="partner_10" model="res.partner">
+            <field name="name">Alexandria Cempaka H</field>
+              <field name="mobile">087822812191</field>
+<!--               <field name="sid">B19AAA13A01</field>-->
+          </record>
+         <record id="partner_11" model="res.partner">
+            <field name="name">Astrid Aristamaya</field>
+              <field name="mobile">081323246205</field>
+<!--               <field name="sid">B19AAA13A02</field>-->
+          </record>
+         <record id="partner_12" model="res.partner">
+            <field name="name">Dwiki Ahmad Rizaldy</field>
+              <field name="mobile">082126650614</field>
+<!--             <field name="sid">B19AAA13A03</field>-->
+          </record>
+         <record id="partner_13" model="res.partner">
+            <field name="name">Nancy De Menzelthe</field>
+              <field name="mobile">082316567675</field>
+<!--             <field name="sid">B19AAA13A04</field>-->
+          </record>
+         <record id="partner_14" model="res.partner">
+            <field name="name">Yudisthira Iriana Putra</field>
+              <field name="mobile">082326959620</field>
+<!--             <field name="sid">B19AAA13A05</field>-->
+          </record>
+         <record id="partner_15" model="res.partner">
+            <field name="name">Martini Safitri</field>
+              <field name="mobile">082214389503</field>
+<!--             <field name="sid">B19AAA13A06</field>-->
+          </record>
+
+        <!-- ielts intensive 3 hrs -->
+        <record id="partner_32" model="res.partner">
+            <field name="name">Amelia Meidhiatiningsih</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_33" model="res.partner">
+            <field name="name">Budi Sutrisno</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_34" model="res.partner">
+            <field name="name">Diva Sania Lukman</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_35" model="res.partner">
+            <field name="name">I Made Vidya Drawira Satrio</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_36" model="res.partner">
+            <field name="name">Muhammad Adam Ramdana</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_37" model="res.partner">
+            <field name="name">Naifa Rizani Lardo</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_38" model="res.partner">
+            <field name="name">Nissa Alifia Elista</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_39" model="res.partner">
+            <field name="name">Tri Siswandi Syahputra</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_40" model="res.partner">
+            <field name="name">Tyari Octhalya Tadzmara</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_41" model="res.partner">
+            <field name="name">Umar Musa</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_42" model="res.partner">
+            <field name="name">Helitha Novianty Muchtar</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+        <record id="partner_43" model="res.partner">
+            <field name="name">Girvandi Ilyas Purba</field>
+<!--            <field name="sid">B19AAA21A01</field>-->
+        </record>
+
+          <!-- ielts rampack -->
+        <record id="partner_44" model="res.partner">
+            <field name="name">Andre Setiawan</field>
+            <field name="mobile">022 87806760</field>
+<!--            <field name="sid">A19EAO22A01</field>-->
+        </record>
+        <record id="partner_45" model="res.partner">
+            <field name="name">Arif Susanto</field>
+            <field name="mobile">085795220225</field>
+<!--            <field name="sid">A19EAO22A02</field>-->
+        </record>
+        <record id="partner_46" model="res.partner">
+            <field name="name">Bhakti Mahendra Jaya</field>
+            <field name="mobile">081221220092</field>
+<!--            <field name="sid">A19EAO22A03</field>-->
+        </record>
+        <record id="partner_47" model="res.partner">
+            <field name="name">Candida	Aulia D. S. N.</field>
+            <field name="mobile">081312420734</field>
+<!--            <field name="sid">A19EAO22A04</field>-->
+        </record>
+        <record id="partner_48" model="res.partner">
+            <field name="name">Johan Yeremi Nainggolan</field>
+            <field name="mobile">085860966416</field>
+<!--             <field name="sid">A19EAO22A05</field>-->
+        </record>
+        <record id="partner_49" model="res.partner">
+            <field name="name">Luthfi Mardiansyah</field>
+            <field name="mobile">081314300983</field>
+<!--            <field name="sid">A19EAO22A06</field>-->
+        </record>
+        <record id="partner_50" model="res.partner">
+            <field name="name">Novika Endini</field>
+            <field name="mobile">082219151532</field>
+<!--            <field name="sid">A19EAO22A07</field>-->
+        </record>
+
+        <!-- ielts rampack A -->
+        <record id="partner_51" model="res.partner">
+            <field name="name">Alvinska Octaviana</field>
+<!--            <field name="sid">A19EAA14A01</field>-->
+            <field name="mobile">081915400895</field>
+        </record>
+        <record id="partner_52" model="res.partner">
+            <field name="name">Fitri Marliani</field>
+<!--            <field name="sid">A19EAA14A02</field>-->
+            <field name="mobile">085723577279</field>
+        </record>
+        <record id="partner_53" model="res.partner">
+            <field name="name">Hernike Irawan</field>
+<!--            <field name="sid">A19EAA14A03</field>-->
+            <field name="mobile">081261896496</field>
+        </record>
+        <record id="partner_54" model="res.partner">
+            <field name="name">Hyunisa Rahmanadia</field>
+<!--            <field name="sid">A19EAA14A04</field>-->
+            <field name="mobile">08569952642</field>
+        </record>
+        <record id="partner_55" model="res.partner">
+            <field name="name">Kusila Devia Rahayu</field>
+<!--            <field name="sid">A19EAA14A05</field>-->
+            <field name="mobile">081321363412</field>
+        </record>
+        <record id="partner_56" model="res.partner">
+            <field name="name">M. Fauzan Rez</field>
+<!--            <field name="sid">A19EAA14A06</field>-->
+            <field name="mobile">0818617856</field>
+        </record>
+        <record id="partner_57" model="res.partner">
+            <field name="name">Moch. Fityan Munggaran (GT)</field>
+<!--            <field name="sid">A19EAA14A07</field>-->
+            <field name="mobile">082119058648</field>
+        </record>
+        <record id="partner_58" model="res.partner">
+            <field name="name">Muhammad Fahmy Avicenna</field>
+<!--            <field name="sid">A19EAA14A08</field>-->
+            <field name="mobile">081220876670</field>
+        </record>
+        <record id="partner_59" model="res.partner">
+            <field name="name">Muhammad Maulana Sidik</field>
+<!--            <field name="sid">A19EAA14A09</field>-->
+            <field name="mobile">085720297310</field>
+        </record>
+        <record id="partner_60" model="res.partner">
+            <field name="name">Nisa Wati</field>
+<!--            <field name="sid">A19EAA14A10</field>-->
+            <field name="mobile">081312212122</field>
+        </record>
+        <record id="partner_61" model="res.partner">
+            <field name="name">Ridwan Wijaya</field>
+<!--            <field name="sid">A19EAA14A11</field>-->
+            <field name="mobile">087722781396</field>
+        </record>
+        <record id="partner_62" model="res.partner">
+            <field name="name">Tina Safaria N</field>
+<!--            <field name="sid">A19EAA14A12</field>-->
+            <field name="mobile">08122004452</field>
+        </record>
+
+        <!-- ielts supin-->
+
+        <record id="partner_63" model="res.partner">
+            <field name="name">Ambar Relawati</field>
+        </record>
+        <record id="partner_64" model="res.partner">
+            <field name="name">Arianti</field>
+        </record>
+        <record id="partner_65" model="res.partner">
+            <field name="name">Ijud Tajudin</field>
+        </record>
+        <record id="partner_66" model="res.partner">
+            <field name="name">Moch. Iqbal</field>
+        </record>
+        <record id="partner_67" model="res.partner">
+            <field name="name">Putri Anggia</field>
+        </record>
+        <record id="partner_68" model="res.partner">
+            <field name="name">Putri Rachmawati</field>
+        </record>
+        <record id="partner_69" model="res.partner">
+            <field name="name">Hanifah Rahmi Fajrin</field>
+        </record>
+
+
+        <!-- ielts weekend -->
+        <record id="partner_70" model="res.partner">
+            <field name="name">Adinda.TP</field>
+        </record>
+        <record id="partner_71" model="res.partner">
+            <field name="name">FX.Ari Agung. P</field>
+        </record>
+        <record id="partner_72" model="res.partner">
+            <field name="name">Iswahyudi Mertosono</field>
+        </record>
+        <record id="partner_73" model="res.partner">
+            <field name="name">M. Iqbal. M</field>
+        </record>
+        <record id="partner_74" model="res.partner">
+            <field name="name">Yudha Andika Pratama</field>
+        </record>
+        <record id="partner_75" model="res.partner">
+            <field name="name">Agus	Ridwan</field>
+        </record>
+
+        <!-- toefl a -->
+
+        <record id="partner_76" model="res.partner">
+            <field name="name">Armando Stefanus S</field>
+            <field name="mobile">087724001231</field>
+        </record>
+        <record id="partner_77" model="res.partner">
+            <field name="name">Azkia Khairunnisa F</field>
+            <field name="mobile">081321992042</field>
+        </record>
+        <record id="partner_78" model="res.partner">
+            <field name="name">Fransiskus O Sitompul</field>
+            <field name="mobile">087886026604</field>
+        </record>
+        <record id="partner_79" model="res.partner">
+            <field name="name">Ganesha Gajah</field>
+            <field name="mobile">085294131140</field>
+        </record>
+        <record id="partner_80" model="res.partner">
+            <field name="name">Hanafi Kristoper Ginting </field>
+            <field name="mobile"></field>
+        </record>
+        <record id="partner_81" model="res.partner">
+            <field name="name">Leonardo Sihombing </field>
+        </record>
+        <record id="partner_82" model="res.partner">
+            <field name="name">Tri Wulandari </field>
+        </record>
+        <record id="partner_83" model="res.partner">
+            <field name="name">Widya Rahmayanti </field>
+        </record>
+
+
+
+
+        <!-- toefl b -->
+        <record id="partner_84" model="res.partner">
+            <field name="name">I Putu Gede Putra Arcana</field>
+            <field name="mobile">087724001231</field>
+        </record>
+        <record id="partner_85" model="res.partner">
+            <field name="name">Muhammad Haidar Rachim</field>
+            <field name="mobile">081321992042</field>
+        </record>
+        <record id="partner_86" model="res.partner">
+            <field name="name">Muhammad Alwy Dahlan</field>
+            <field name="mobile">087886026604</field>
+        </record>
+        <record id="partner_87" model="res.partner">
+            <field name="name">Ghalib Bima Gema Ramadhan</field>
+            <field name="mobile">085294131140</field>
+        </record>
+        <record id="partner_88" model="res.partner">
+            <field name="name">Bianca Edgina Handoko</field>
+        </record>
+        <record id="partner_89" model="res.partner">
+            <field name="name">Dave Deraldy</field>
+        </record>
+        <record id="partner_90" model="res.partner">
+            <field name="name">Ahmad Rafi </field>
+        </record>
+        <record id="partner_91" model="res.partner">
+            <field name="name">George Vincent Bungaran P</field>
+        </record>
+        <record id="partner_92" model="res.partner">
+            <field name="name">Nevi Cahya W</field>
+        </record>
+
+
+
+    </data>
+</odoo>

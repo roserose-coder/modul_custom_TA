@@ -1,0 +1,22 @@
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="cms2.action_try2">
+          <field name="name">Try2</field>
+          <field name="res_model">cms2.try2</field>
+          <field name="view_mode">form</field>
+        </record>
+         <menuitem name="try2" id="cms2_try2" parent="cms2_material"
+              action="cms2.action_try2" sequence="5"/>
+
+         <record model="ir.ui.view" id="cms2_try2">
+            <field name="name">cms2.try2.form</field>
+            <field name="model">cms2.try2</field>
+            <field name="arch" type="xml">
+              <form>
+                <field name="teach" widget="selection"/>
+
+              </form>
+            </field>
+        </record>
+    </data>
+</odoo>

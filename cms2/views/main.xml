@@ -1,0 +1,16 @@
+<odoo>
+  <data>
+
+
+    <record model="ir.actions.act_window" id="cms2.action_window">
+      <field name="name">Program List</field>
+      <field name="res_model">cms2.program</field>
+      <field name="view_mode">tree,form,kanban,calendar</field>
+    </record>
+
+
+    <menuitem name="CMS" id="cms2.menu_root" action="cms2.action_window"/>
+
+
+  </data>
+</odoo>

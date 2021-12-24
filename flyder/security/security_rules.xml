@@ -1,0 +1,27 @@
+<odoo>
+<!--    <record model="ir.rule" id="flyder_flyder_rule">-->
+<!--         <field name="name">Flyder: only creator or</field>-->
+<!--         <field name="model_id" ref="model_flyder_flyder"/>-->
+<!--               <field eval="True" name="global"/>-->
+<!--         <field name="domain_force">['|',('create_uid', '=', user.id),('customer', '=', user.partner_id.id)]</field>-->
+<!--          <field name="perm_read">1</field>-->
+<!--          <field name="perm_write">1</field>-->
+<!--         <field name="perm_unlink">1</field>-->
+<!--        <field name="perm_create">1</field>-->
+<!--    </record>-->
+
+<!--      <record model="ir.rule" id="flyder_flyder_rule2">-->
+<!--         <field name="name">Flyder: only creator or2</field>-->
+<!--         <field name="model_id" ref="model_flyder_flyder"/>-->
+<!--               <field eval="True" name="global"/>-->
+<!--         <field name="domain_force">[('create_uid', '!=', user.id),('customer', '!=', user.partner_id.id)]</field>-->
+<!--            <field name="perm_read">1</field>-->
+<!--          <field name="perm_write">0</field>-->
+<!--         <field name="perm_unlink">0</field>-->
+<!--        <field name="perm_create">1</field>-->
+<!--    </record>-->
+
+
+
+
+</odoo>

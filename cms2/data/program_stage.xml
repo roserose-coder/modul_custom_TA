@@ -1,0 +1,48 @@
+<odoo>
+
+
+    <data>
+
+        <record id="stage_prepare" model="cms2.program.stage">
+
+            <field name="name">prepare</field>
+
+            <field name="sequence">1</field>
+
+            <field name="status">-1</field>
+
+        </record>
+
+
+         <record id="stage_pending" model="cms2.program.stage">
+
+            <field name="name">pending</field>
+
+            <field name="sequence">2</field>
+
+            <field name="status">0</field>
+
+        </record>
+
+          <record id="stage_accepted" model="cms2.program.stage">
+
+            <field name="name">Accepted</field>
+
+            <field name="sequence">3</field>
+
+            <field name="status">1</field>
+
+        </record>
+
+         <record id="stage_rejected" model="cms2.program.stage">
+
+            <field name="name">Rejected</field>
+
+            <field name="sequence">4</field>
+
+            <field name="status">-2</field>
+
+        </record>
+
+    </data>
+</odoo>

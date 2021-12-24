@@ -1,0 +1,12 @@
+<odoo>
+<!--     <template id="customed_assets" name="Custom Assets">-->
+<!--         <link rel="stylesheet" type="text/css" href="/cms2/static/src/css/cms2.css"/>-->
+
+<!--         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>-->
+<!--    </template>-->
+    <template id="assets_frontend" inherit_id="web.assets_frontend">
+     <xpath expr="." position="inside">
+        <link rel="stylesheet" type="text/css" href="/cms2/static/src/css/cms2.css"/>
+     </xpath>
+    </template>
+</odoo>

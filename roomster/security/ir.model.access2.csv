@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+
+acl_roomster_room_master_1,roomster.room,model_roomster_room,group_room_master,1,1,1,0
+acl_roomster_room_master_2,roomster.booked,model_roomster_booked,group_room_master,1,1,1,0
+acl_roomster_room_master_3,res.config.settings,model_res_config_settings,group_room_master,1,1,1,0
+
+acl_roomster_room_booker_1,roomster.room,model_roomster_room,group_booker,1,0,0,0
+acl_roomster_room_booker_2,roomster.booked,model_roomster_booked,group_booker,0,0,0,0
+acl_roomster_room_booker_3,res.config.settings,model_res_config_settings,group_booker,0,0,0,0
+
+acl_booked_wizard, roomster.booked.wizard,model_roomster_booked_wizard,group_self_borrow,1,1,1,1

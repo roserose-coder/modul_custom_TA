@@ -1,0 +1,84 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+<!--    <record model="ir.ui.view" id="roomster.booked.wizard.form">-->
+<!--      <field name="name">roomster.booked.wizard.form</field>-->
+<!--      <field name="model">roomster.booked.wizard</field>-->
+<!--      <field name="arch" type="xml">-->
+<!--        <form>-->
+<!--          <field name="name"/>-->
+<!--        </form>-->
+<!--      </field>-->
+<!--    </record>-->
+     <record id='roomster_booked_wizard_form' model='ir.ui.view'>
+       <field name='name'>roomster.booked.wizard.form</field>
+       <field name='model'>roomster.booked.wizard</field>
+       <field name='arch' type='xml'>
+         <form string="Borrow books">
+           <sheet>
+             <group>
+                <field name="name"/>
+                 <field name="borrower"/>
+                 <field name="start_date"/>
+                 <field name="end_date"/>
+
+                <field name="currency_id" invisible ="1"/>
+                 <field name="price_list"/>
+                 <field name="total_price"/>
+             </group>
+           </sheet>
+           <footer>
+                 <button string='Rent' type='object'
+                 name='add_room_rents'
+                 class='btn-primary'/>
+                 <button string='Cancel'  special='cancel'/>
+           </footer>
+         </form>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="roomster_booked_wizard_action_window">
+      <field name="name">roomster booked wizard action</field>
+      <field name="res_model">roomster.booked.wizard</field>
+      <field name="view_mode">form</field>
+      <field name="target">new</field>
+    </record>
+
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="roomster.action_server">
+      <field name="name">roomster server</field>
+      <field name="model_id" ref="model_roomster_roomster"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="roomster" id="roomster.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="roomster.menu_1" parent="roomster.menu_root"/>
+    <menuitem name="Menu 2" id="roomster.menu_2" parent="roomster.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="roomster.menu_1_list" parent="roomster.menu_1"
+              action="roomster.action_window"/>
+    <menuitem name="Server to list" id="roomster" parent="roomster.menu_2"
+              action="roomster.action_server"/>
+-->
+  </data>
+</odoo>

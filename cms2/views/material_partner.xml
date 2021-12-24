@@ -1,0 +1,78 @@
+<odoo>
+  <data>
+
+
+    <record model="ir.actions.act_window" id="cms2.material_action_window">
+      <field name="name">Material Score</field>
+      <field name="res_model">cms2.material.partner</field>
+<!--        <field name="domain">[('teacher_name','=',uid)]</field>-->
+      <field name="view_mode">tree,graph,form</field>
+    </record>
+
+
+
+   <record model="ir.ui.view" id="cms2_material_partner_tree_view">
+          <field name="name">cms2.material.partner.tree.view</field>
+          <field name="model">cms2.material.partner</field>
+          <field name="arch" type="xml">
+              <tree>
+<!--            <tree editable ="top"  decoration-success="score&gt;= 2.9"  decoration-danger="score&lt;= 3.0" >-->
+                     <button  name="book_return_reminder" string="send notification" type="object"/>
+                <field name="partner_id"/>
+                <field name="material_id"/>
+                 <field name="score" avg="average" />
+
+            </tree>
+          </field>
+    </record>
+
+
+   <record model="ir.ui.view" id="cms2_material_partner_form_view">
+          <field name="name">cms2.material.partner.form.view</field>
+          <field name="model">cms2.material.partner</field>
+          <field name="arch" type="xml">
+              <form>
+                  <sheet>
+                      <group>
+                           <field name="partner_id"/>
+                            <field name="material_id"/>
+                             <field name="score" avg="average" />
+                      </group>
+
+                  </sheet>
+                   <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>`
+                    </div>
+              </form>
+
+          </field>
+    </record>
+
+
+
+
+
+      <record model="ir.ui.view" id="cms2_material_partner_graph_view">
+           <field name="name">cms2.material.partner.graph.view</field>
+           <field name="model">cms2.material.partner</field>
+           <field name="type">graph</field>
+           <field name="arch" type="xml">
+                 <graph string="Parter Score Lines">
+                     <field name="partner_id" />
+                        <field name="score" operator="*"/>
+<!--                      <field name="material_id" group="True"/>-->
+
+
+                </graph>
+            </field>
+        </record>
+
+    <menuitem name="Material Score" id="cms2_material_score" parent ="cms2_material" action="cms2.material_action_window"
+        sequence="2"
+    />
+
+
+  </data>
+</odoo>

@@ -1,0 +1,39 @@
+<odoo >
+
+     <record model="ir.rule" id="cms2_session_partner_rule">
+         <field name="name">CMS: see only own pupils</field>
+         <field name="model_id" ref="model_cms2_session_partner"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_director'))]"/>
+         <field name="domain_force">[('teacher_id', '=', user.id)]</field>
+     </record>
+
+     <record model="ir.rule" id="cms2_material_partner_rule">
+         <field name="name">CMS: see only own score pupils</field>
+         <field name="model_id" ref="model_cms2_material_partner"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_director'))]"/>
+         <field name="domain_force">[('teacher_name', '=', user.id)]</field>
+     </record>
+
+
+    <record model="ir.rule" id="cms2_program_multicompany_rule">
+         <field name="name">CMS: see only own company program</field>
+         <field name="model_id" ref="model_cms2_program"/>
+<!--         <field name="groups"  eval="[(4, ref('cms2.group_director'))]"/>-->
+         <field name="domain_force">['|',('company_id','=',False),('company_id', 'child_of', [user.company_id.id])]</field>
+     </record>
+
+
+
+
+
+
+<!--     <record model="ir.rule" id="library_book_all_rule">-->
+<!--     <field name="name">Library: see all books</field>-->
+<!--     <field name="model_id" ref="model_library_book"/>-->
+<!--     <field name="groups" -->
+<!--     eval="[(4, ref('my_library.group_library_-->
+<!--    librarian'))]"/>-->
+<!--     <field name="domain_force">[(1, '=', 1)]</field>-->
+<!--     </record>-->
+
+</odoo>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_director" model="res.groups">
+        <field name="name">Academic Director</field>
+        <field name="category_id" ref="base.module_category_cms"/>
+        <field name="users" eval="[(4, ref('base.user_admin'))]" />
+<!--        <field name="users" eval="[(4, ref('data_perusahaan.user_admin'))]"/>-->
+<!--        <field name="users" eval="[(6, 0, [ref('data_perusahaan.user_2'),ref('data_perusahaan.user_4'),ref('base.user_admin')])]"/>-->
+    </record>
+
+
+     <record id="group_real_director" model="res.groups">
+         <field name="name">Director</field>
+         <field name="category_id" ref="base.module_category_cms"/>
+            <field name="users" eval="[(4, ref('base.user_admin'))]" />
+<!--         <field name="users" eval="[(6, 0, [ref('data_perusahaan.user_1'), ref('data_perusahaan.user_3'),ref('base.user_admin')])]"/>-->
+    </record>
+
+     <record id="group_staff" model="res.groups">
+         <field name="name">Staff</field>
+         <field name="category_id" ref="base.module_category_cms"/>
+             <field name="users" eval="[(4, ref('base.user_admin'))]" />
+<!--         <field name="users" eval="[(6, 0, [ref('data_perusahaan.user_13'),ref('data_perusahaan.user_14'),ref('data_perusahaan.user_15'),ref('data_perusahaan.user_16'),ref('base.user_admin')])]"/>-->
+
+<!--        <field name="users" eval="[(4, ref('data_perusahaan.user_admin'))]"/>-->
+    </record>
+
+
+     <record id="group_manager" model="res.groups">
+         <field name="name">Manager</field>
+             <field name="users" eval="[(4, ref('base.user_admin'))]" />
+<!--         <field name="users" eval="[(6, 0,[ref('base.user_admin'), ref('data_perusahaan.user_5'), ref('data_perusahaan.user_6'),ref('base.user_admin')])]"/>-->
+         <field name="category_id" ref="base.module_category_cms"/>
+    </record>
+
+     <record id="group_teacher" model="res.groups">
+         <field name="name">Instructor / Teacher</field>
+<!--         <field name="category_id" ref="base.module_category_cms"/>-->
+          <field name="category_id" ref="base.module_category_cms"/>
+             <field name="users" eval="[(4, ref('base.user_admin'))]" />
+<!--         <field name="users" eval="[(6, 0,[ref('data_perusahaan.user_9'), ref('data_perusahaan.user_10'), ref('data_perusahaan.user_11'),ref('data_perusahaan.user_12'),ref('base.user_admin')])]"/>-->
+    </record>
+
+
+
+
+
+
+</odoo>

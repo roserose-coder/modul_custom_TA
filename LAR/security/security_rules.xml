@@ -1,0 +1,12 @@
+<odoo>
+
+        <record model="ir.rule" id="lar_limit_invoice_multicompany_rule">
+         <field name="name">LAR: see only own company limit invoice</field>
+         <field name="model_id" ref="model_limit_invoice"/>
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+       </record>
+</odoo>

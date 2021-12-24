@@ -1,0 +1,172 @@
+<odoo >
+
+
+    <record model="ir.rule" id="cms2_program_staff_rule">
+         <field name="name">CMS: capable of modifying only their own program</field>
+         <field name="model_id" ref="model_cms2_program"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_staff'))]"/>
+         <field name="domain_force">[('create_uid', '=', user.id)]</field>
+         <field name="perm_write">1</field>
+         <field name="perm_unlink">0</field>
+        <field name="perm_read">1</field>
+         <field name="perm_create">1</field>
+    </record>
+    <record model="ir.rule" id="cms2_program_staff_2_rule">
+         <field name="name">CMS: capable of modifying only their own program(2)</field>
+         <field name="model_id" ref="model_cms2_program"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_staff'))]"/>
+         <field name="domain_force">[('create_uid', '!=', user.id)]</field>
+         <field name="perm_read">1</field>
+         <field name="perm_create">1</field>
+          <field name="perm_write">0</field>
+         <field name="perm_unlink">0</field>
+
+    </record>
+
+    <record model="ir.rule" id="cms2_session_staff_rule">
+         <field name="name">CMS: capable of modifying only their own session</field>
+         <field name="model_id" ref="model_cms2_session"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_staff'))]"/>
+         <field name="domain_force">[('create_uid', '=', user.id)]</field>
+         <field name="perm_write">1</field>
+         <field name="perm_unlink">0</field>
+        <field name="perm_read">1</field>
+         <field name="perm_create">1</field>
+    </record>
+    <record model="ir.rule" id="cms2_session_staff_2_rule">
+         <field name="name">CMS: capable of modifying only their own session(2)</field>
+         <field name="model_id" ref="model_cms2_session"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_staff'))]"/>
+         <field name="domain_force">[('create_uid', '!=', user.id)]</field>
+         <field name="perm_read">1</field>
+         <field name="perm_create">1</field>
+          <field name="perm_write">0</field>
+         <field name="perm_unlink">0</field>
+
+    </record>
+
+
+    <record model="ir.rule" id="cms2_material_staff_rule">
+         <field name="name">CMS: capable of modifying only their own material</field>
+         <field name="model_id" ref="model_cms2_material"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_staff'))]"/>
+         <field name="domain_force">[('create_uid', '=', user.id)]</field>
+         <field name="perm_write">1</field>
+         <field name="perm_unlink">0</field>
+        <field name="perm_read">1</field>
+         <field name="perm_create">1</field>
+    </record>
+    <record model="ir.rule" id="cms2_material_staff_2_rule">
+         <field name="name">CMS: capable of modifying only their own material(2)</field>
+         <field name="model_id" ref="model_cms2_material"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_staff'))]"/>
+         <field name="domain_force">[('create_uid', '!=', user.id)]</field>
+         <field name="perm_read">1</field>
+         <field name="perm_create">1</field>
+          <field name="perm_write">0</field>
+         <field name="perm_unlink">0</field>
+
+    </record>
+
+
+     <record model="ir.rule" id="cms2_session_partner_teacher_rule">
+         <field name="name">CMS: capable of modifying only their own creation(teacher)</field>
+         <field name="model_id" ref="model_cms2_session_partner"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_teacher'))]"/>
+         <field name="domain_force">[('teacher_id', '=', user.id)]</field>
+
+
+    </record>
+
+     <record model="ir.rule" id="cms2_material_partner_teacher_rule">
+         <field name="name">CMS: capable of modifying only their own creation(teacher(2))</field>
+         <field name="model_id" ref="model_cms2_material_partner"/>
+         <field name="groups"  eval="[(4, ref('cms2.group_teacher'))]"/>
+         <field name="domain_force">[('teacher_name', '=', user.id)]</field>
+
+
+    </record>
+
+      <record model="ir.rule" id="cms2_program_multicompany_rule">
+         <field name="name">CMS: see only own company program</field>
+         <field name="model_id" ref="model_cms2_program"/>
+<!--         <field name="groups"  eval="[(4, ref('cms2.group_director'))]"/>-->
+<!--            <field name="groups"   eval="[(6, 0, [ref('cms2.group_director'),-->
+<!--                                    ref('cms2.group_real_director'),-->
+<!--                                    ref('cms2.group_staff'),-->
+<!--                                    ref('cms2.group_manager'),-->
+<!--                                    ref('cms2.group_teacher'),-->
+
+<!--                            ])]"/>-->
+
+<!--         <field name="domain_force">['|',-->
+<!--             ('company_id','=',False),-->
+<!--             ('company_id', 'child_of', [user.company_id.id]),-->
+<!--            -->
+<!--             ]</field>-->
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+     </record>
+
+    <record model="ir.rule" id="cms2_material_multicompany_rule">
+         <field name="name">CMS: see only own company material</field>
+         <field name="model_id" ref="model_cms2_material"/>
+<!--         <field name="groups"   eval="[(6, 0, [ref('cms2.group_director'),-->
+<!--                                    ref('cms2.group_real_director'),-->
+<!--                                    ref('cms2.group_staff'),-->
+<!--                                    ref('cms2.group_manager'),-->
+<!--                                    ref('cms2.group_teacher'),])]"/>-->
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+     </record>
+      <record model="ir.rule" id="cms2_material_partner_multicompany_rule">
+         <field name="name">CMS: see only own company material partner</field>
+         <field name="model_id" ref="model_cms2_material_partner"/>
+<!--         <field name="groups"   eval="[(6, 0, [ref('cms2.group_director'),-->
+<!--                                    ref('cms2.group_real_director'),-->
+<!--                                    ref('cms2.group_staff'),-->
+<!--                                    ref('cms2.group_manager'),-->
+<!--                                    ref('cms2.group_teacher'),])]"/>-->
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+     </record>
+     <record model="ir.rule" id="cms2_session_multicompany_rule">
+         <field name="name">CMS: see only own company session</field>
+         <field name="model_id" ref="model_cms2_session"/>
+<!--         <field name="groups"   eval="[(6, 0, [ref('cms2.group_director'),-->
+<!--                                    ref('cms2.group_real_director'),-->
+<!--                                    ref('cms2.group_staff'),-->
+<!--                                    ref('cms2.group_manager'),-->
+<!--                                    ref('cms2.group_teacher'),])]"/>-->
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+     </record>
+
+      <record model="ir.rule" id="cms2_session_partner_multicompany_rule">
+         <field name="name">CMS: see only own company session partner</field>
+         <field name="model_id" ref="model_cms2_session_partner"/>
+<!--         <field name="groups"   eval="[(6, 0, [ref('cms2.group_director'),-->
+<!--                                    ref('cms2.group_real_director'),-->
+<!--                                    ref('cms2.group_staff'),-->
+<!--                                    ref('cms2.group_manager'),-->
+<!--                                    ref('cms2.group_teacher'),])]"/>-->
+
+           <field name="domain_force">['|',
+             ('company_id','=',False),
+             ('company_id', 'in', company_ids)
+             ]</field>
+     </record>
+
+</odoo>

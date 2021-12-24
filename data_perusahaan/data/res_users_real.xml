@@ -1,0 +1,119 @@
+<odoo noupdate="0">
+    <data>
+
+          <record id="user_1" model="res.users">
+              <field name="login">dwiharini@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_16" />
+            </record>
+
+          <record id="user_2" model="res.users">
+              <field name="login">ur.wangi@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_17" />
+            </record>
+
+          <record id="user_3" model="res.users">
+              <field name="login">aan@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_18" />
+            </record>
+
+          <record id="user_4" model="res.users">
+              <field name="login">ayu.puspaningrum@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_19" />
+            </record>
+
+          <record id="user_5" model="res.users">
+              <field name="login">ruby.andriansyah@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_20" />
+            </record>
+
+          <record id="user_6" model="res.users">
+              <field name="login">julia.ramdhani@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_21" />
+            </record>
+
+          <record id="user_7" model="res.users">
+              <field name="login">galih.ginanjar@ieducindonesia.com</field>
+              <field name="password">password</field>
+<!--               <field name="groups_id" eval="[(6,0,ref(base.group_user))]"/>-->
+<!--              <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager'), ref('base.group_allow_export')])]"/>-->
+<!--              <field name="company_ids" eval="[(4,0,ref(base.group_user))]" />-->
+                <field name="company_ids" eval="[(6,0,[
+                ref('base.main_company'),
+                 ref('main_company3'),
+                  ref('main_company4'),]
+                )]"/>
+              <field name="partner_id" ref="partner_22" />
+            </record>
+
+          <record id="user_8" model="res.users">
+              <field name="login">mariam.muddaris@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_23" />
+            </record>
+
+          <record id="user_9" model="res.users">
+              <field name="login">mahar.muhammad@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_24" />
+            </record>
+
+          <record id="user_10" model="res.users">
+              <field name="login">arham.mauriyat@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_25" />
+            </record>
+
+          <record id="user_11" model="res.users">
+              <field name="login">vini.holmboe@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_26" />
+            </record>
+
+
+          <record id="user_12" model="res.users">
+              <field name="login">ervien.noviyanti@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_27" />
+            </record>
+
+
+
+          <record id="user_13" model="res.users">
+              <field name="login">raden.prawisda@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_28" />
+          </record>
+
+          <record id="user_14" model="res.users">
+              <field name="login">ahmad.pratama@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_29" />
+          </record>
+
+          <record id="user_15" model="res.users">
+              <field name="login">ika.handayani@ieducindonesia.com</field>
+              <field name="password">password</field>
+              <field name="partner_id" ref="partner_30" />
+<!--              <field name="company_ids" eval="[(6, 0, [ref('main_company2'), ref('main_company3')])]"/>-->
+          </record>
+
+
+          <record id="user_16" model="res.users">
+              <field name="login">aisha.meinanda@ieducindonesia.com</field>
+              <field name="password">password</field>
+<!--              <field name="company_id" eval="[(4, ref('main_company4'))]"/>-->
+<!--              <field name="company_id" ref="main_company3"/>-->
+              <field name="partner_id" ref="partner_31" />
+            </record>
+
+
+
+
+    </data>
+</odoo>

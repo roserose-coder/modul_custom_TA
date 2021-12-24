@@ -1,0 +1,211 @@
+<odoo>
+
+    <data>
+
+        <record id="slide_ielts_1" model="slide.slide">
+            <field name="name">Listening Section</field>
+            <field name="sequence">4</field>
+            <field name="url">https://youtu.be/jIZMjcYa8yg</field>
+            <field name="image_1920" type="base64" file="data_elearning/static/src/img/ielts_listening.jpg"/>
+            <field name="slide_type">video</field>
+            <field name="channel_id" ref="slide_channel_ielts"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="False"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+             <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_listening'),
+                            ref('slide_tag_ielts'),
+
+
+
+                            ])]"/>
+
+            <field name="description"></field>
+        </record>
+        <record id="slide_ielts_2" model="slide.slide">
+            <field name="name">Writing Section</field>
+            <field name="sequence">4</field>
+<!--            <field name="url">https://youtu.be/jIZMjcYa8yg</field>-->
+            <field name="datas" type="base64" file="data_elearning/static/src/img/writting_ielts.pdf"/>
+            <field name="image_1920" type="base64" file="data_elearning/static/src/img/ielts_listening.jpg"/>
+            <field name="slide_type">presentation</field>
+            <field name="channel_id" ref="slide_channel_ielts"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="False"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+             <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_writing'),
+                            ref('slide_tag_ielts'),
+
+
+
+                            ])]"/>
+
+            <field name="description"></field>
+        </record>
+        <record id="slide_ielts_3" model="slide.slide">
+            <field name="name">Reading section</field>
+            <field name="sequence">1</field>
+            <field name="datas" type="base64" file="data_elearning/static/src/img/reading.pdf"/>
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/slide_demo_tree_img_2.jpg"/>
+            <field name="slide_type">presentation</field>
+            <field name="channel_id" ref="slide_channel_ielts"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_reading'),
+                            ref('slide_tag_ielts'),
+
+
+
+                            ])]"/>
+            <field name="quiz_first_attempt_reward">100</field>
+            <field name="quiz_second_attempt_reward">75</field>
+            <field name="quiz_third_attempt_reward">50</field>
+            <field name="quiz_fourth_attempt_reward">25</field>
+<!--            <field name="description">A summary of know-how: what are the main trees categories and how to differentiate them.</field>-->
+        </record>
+        <record id="slide_ielts_4" model="slide.slide">
+             <field name="name">Speaking section</field>
+            <field name="sequence">1</field>
+            <field name="datas" type="base64" file="data_elearning/static/src/img/speaking.pdf"/>
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/slide_demo_tree_img_2.jpg"/>
+            <field name="slide_type">presentation</field>
+            <field name="channel_id" ref="slide_channel_ielts"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_speaking'),
+                            ref('slide_tag_ielts'),
+
+
+
+                            ])]"/>
+
+        </record>
+
+        <record id="slide_gre_1" model="slide.slide">
+            <field name="name">Getting Started</field>
+            <field name="sequence">1</field>
+            <field name="datas" type="base64" file="data_elearning/static/src/img/gre.pdf"/>
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/slide_demo_tree_img_2.jpg"/>
+            <field name="slide_type">presentation</field>
+            <field name="channel_id" ref="slide_channel_gre"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_started'),
+                            ref('slide_tag_GRE'),
+
+
+
+                            ])]"/>
+<!--            <field name="quiz_first_attempt_reward">100</field>-->
+<!--            <field name="quiz_second_attempt_reward">75</field>-->
+<!--            <field name="quiz_third_attempt_reward">50</field>-->
+<!--            <field name="quiz_fourth_attempt_reward">25</field>-->
+<!--            <field name="description">A summary of know-how: what are the main trees categories and how to differentiate them.</field>-->
+        </record>
+        <record id="slide_gre_2" model="slide.slide">
+            <field name="name">Verbal Reasoning</field>
+            <field name="sequence">1</field>
+            <field name="datas" type="base64" file="data_elearning/static/src/img/soal_gre.pdf"/>
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/slide_demo_tree_img_2.jpg"/>
+            <field name="slide_type">presentation</field>
+            <field name="channel_id" ref="slide_channel_gre"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_verbal_reasoning'),
+                            ref('slide_tag_GRE'),
+                            ])]"/>
+            <field name="quiz_first_attempt_reward">100</field>
+            <field name="quiz_second_attempt_reward">75</field>
+            <field name="quiz_third_attempt_reward">50</field>
+            <field name="quiz_fourth_attempt_reward">25</field>
+            <field name="description">A summary of know-how: what are the main trees categories and how to differentiate them.</field>
+        </record>
+        <record id="slide_gre_3" model="slide.slide">
+            <field name="name">Percentages practice set</field>
+            <field name="sequence">1</field>
+<!--            <field name="datas" type="base64" file="data_elearning/static/src/img/soal_gre.pdf"/>-->
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/slide_demo_tree_img_2.jpg"/>
+            <field name="slide_type">quiz</field>
+            <field name="channel_id" ref="slide_channel_gre"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_quantitative_reasoning'),
+                            ref('slide_tag_GRE'),
+                            ])]"/>
+            <field name="quiz_first_attempt_reward">100</field>
+            <field name="quiz_second_attempt_reward">75</field>
+            <field name="quiz_third_attempt_reward">50</field>
+            <field name="quiz_fourth_attempt_reward">25</field>
+            <field name="description">A summary of know-how: what are the main trees categories and how to differentiate them.</field>
+        </record>
+        <record id="slide_gre_4" model="slide.slide">
+            <field name="name"> Simultaneous equation practice set </field>
+            <field name="sequence">1</field>
+<!--            <field name="datas" type="base64" file="data_elearning/static/src/img/soal_gre.pdf"/>-->
+            <field name="image_1920" type="base64" file="website_slides/static/src/img/slide_demo_tree_img_2.jpg"/>
+            <field name="slide_type">quiz</field>
+            <field name="channel_id" ref="slide_channel_gre"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_quantitative_reasoning'),
+                            ref('slide_tag_GRE'),
+                            ])]"/>
+            <field name="quiz_first_attempt_reward">100</field>
+            <field name="quiz_second_attempt_reward">75</field>
+            <field name="quiz_third_attempt_reward">50</field>
+            <field name="quiz_fourth_attempt_reward">25</field>
+            <field name="description">A summary of know-how: what are the main trees categories and how to differentiate them.</field>
+        </record>
+        <record id="slide_gre_5" model="slide.slide">
+            <field name="name">Data interpretation practice set </field>
+            <field name="sequence">1</field>
+            <field name="image_1920" type="base64"  file="data_elearning/static/src/img/statistik.png"/>
+            <field name="slide_type">infographic</field>
+            <field name="channel_id" ref="slide_channel_gre"/>
+            <field name="is_published" eval="True"/>
+            <field name="date_published" eval="datetime.now() - timedelta(days=8)"/>
+            <field name="is_preview" eval="True"/>
+            <field name="public_views">0</field>
+            <field name="completion_time">1</field>
+            <field name="tag_ids"
+                        eval="[(6, 0, [ref('slide_tag_quantitative_reasoning'),
+                            ref('slide_tag_GRE'),
+                            ])]"/>
+            <field name="quiz_first_attempt_reward">100</field>
+            <field name="quiz_second_attempt_reward">75</field>
+            <field name="quiz_third_attempt_reward">50</field>
+            <field name="quiz_fourth_attempt_reward">25</field>
+            <field name="description">A summary of know-how: what are the main trees categories and how to differentiate them.</field>
+        </record>
+
+    </data>
+</odoo>

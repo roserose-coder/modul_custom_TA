@@ -1,0 +1,29 @@
+<odoo>
+    <data>
+
+
+          <record id="material_1" model="cms2.material">
+            <field name="name">Listening</field>
+          </record>
+
+          <record id="material_2" model="cms2.material">
+            <field name="name">Reading</field>
+
+          </record>
+         <record id="material_3" model="cms2.material">
+            <field name="name">Writing 1</field>
+
+          </record>
+         <record id="material_4" model="cms2.material">
+            <field name="name">Writing 2</field>
+
+          </record>
+         <record id="material_5" model="cms2.material">
+            <field name="name">Writing Test</field>
+
+          </record>
+
+
+
+    </data>
+</odoo>

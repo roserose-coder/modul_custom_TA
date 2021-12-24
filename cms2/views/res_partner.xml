@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+
+
+
+
+      <record model="ir.actions.act_window" id="cms2.partner_action_window">
+          <field name="name">Partner List</field>
+          <field name="res_model">res.partner</field>
+          <field name="view_mode">tree,form</field>
+      </record>
+
+       <record model="ir.ui.view" id="view_partner_tree">
+        <field name="name">res.partner.tree.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_tree"/>
+        <field name="arch" type="xml">
+           <field name="user_id" position="after">
+
+               <field name="sid"/>
+           </field>
+        </field>
+      </record>
+
+     <record model="ir.ui.view" id="view_partner_form">
+        <field name="name">res.partner.form.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="vat" position ="after">
+                <field name="sid"/>
+            </field>
+            <notebook position="inside">
+                <page string="Program List">
+                    <field name="program_id" colspan="4" nolabel="1"/>
+                </page>
+                <page string="Material List">
+                    <tree>
+                           <field name="material_id" colspan="4" nolabel="1"/>
+                        <field name="score_id" colspan="4" nolabel="1"/>
+                    </tree>
+
+                </page>
+
+            </notebook>
+        </field>
+      </record>
+
+      <menuitem name="Users" id="cms2.menu_user" parent="cms2.menu_root" sequence="2"/>
+      <menuitem
+            name="Partner List"
+            id="cms2.menu_partner_list"
+            parent="cms2.menu_user"
+            action ="cms2.partner_action_window"
+            sequence ="1"/>
+
+</odoo>
+

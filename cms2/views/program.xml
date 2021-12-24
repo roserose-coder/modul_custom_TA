@@ -1,0 +1,297 @@
+<odoo>
+  <data>
+
+
+      <record model="ir.ui.view" id="cms2_program_tree_view">
+          <field name="name">cms2.program.tree.view</field>
+          <field name="model">cms2.program</field>
+          <field name="arch" type="xml">
+            <tree>
+              <field name="program_name"/>
+              <field name="start_date"/>
+              <field name="end_date"/>
+            </tree>
+          </field>
+    </record>
+
+      <record id="cms2_program_search_view" model="ir.ui.view">
+       <field name="name">cms2.program.search.view</field>
+       <field name="model">cms2.program</field>
+       <field name="arch" type="xml">
+           <search string="Search Program">
+               <field name="program_name"/>
+
+                <filter string="Finished Program"
+                       name="finished_program"
+                       domain="[('end_date','&lt;=',datetime.datetime.now())]"
+               />
+               <filter string="On Going Program"
+                       name="On_going_program"
+                        domain="[
+                        (
+                            'start_date', '&gt;=', datetime.datetime.now().strftime('%Y-%m-%d 00:00:00')
+                        ),
+                        (
+                            'end_date', '&gt;=',datetime.datetime.now().strftime('%Y-%m-%d 23:23:59')
+                        )
+
+                        ]"
+               />
+
+                   <filter string="Upcoming Program"
+                       name="upcoming_program"
+                        domain="[
+                        (
+                            'start_date', '&gt;=', datetime.datetime.now()
+                        )
+                        ]"
+               />
+
+                <searchpanel>
+                  <field name="material_id" icon="fa fa-list"
+                  select="multi"/>
+                    <field name="session_id" icon="fa fa-list"
+                  select="multi"/>
+                    <field name="partner_id" icon="fa fa-list"
+                  select="multi"/>
+
+                    <field name="tag_ids"
+                      icon="fa fa-list"
+                      select="multi"
+                     />
+                </searchpanel>
+           </search>
+       </field>
+    </record>
+
+      <record model="ir.ui.view" id="cms2_program_form_view">
+          <field name="name">cms2.program.form.view</field>
+          <field name="model">cms2.program</field>
+          <field name="arch" type="xml">
+            <form>
+                  <group>
+
+                      <header>
+                         <field name="stage_id" widget="statusbar" options="{'clickable': '1', 'fold_field': 'fold'}"/>
+                      </header>
+
+
+                    </group>
+                 <sheet>
+
+                        <widget name="web_ribbon" title="Archived" bg_color="bg-danger"
+                                attrs="{'invisible': [('active', '=', True)]}"/>
+
+
+
+                    <group>
+
+                        <field name="company_id" groups ="base.group_multi_company"/>
+
+                        <field name="image_1920" widget="image" options="{'preview_image': 'image_128'}" />
+
+                        <field name="program_name"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="description"/>
+
+                         <field name="active"/>
+                        <field name="popularity" widget="priority"/>
+                        <field name="tag_ids" widget="many2many_tags"
+                         options="{'color_field': 'color', 'no_create_edit':
+                        True}"/>
+                        <field name="website_id"/>
+
+                    </group>
+                     <group>
+                          <notebook>
+
+                            <page string ="Session List">
+
+                                <field name="session_id">
+                                    <tree>
+
+                                        <field name ="session_name"/>
+                                    </tree>
+                                </field>
+                            </page>
+
+                            <page string ="Customer List">
+
+                                    <field name="partner_id" widget="many2many_kanban" >
+                                       <kanban quick_create="false" create="true" delete="true">
+                                           <field name="id"/>
+                                           <field name="name"/>
+                                           <templates>
+                                               <t t-name="kanban-box">
+
+                                                   <div class="oe_kanban_global_click" style="position: relative">
+                                                       <a t-if="! read_only_mode" type="delete" style="position: absolute; right: 0; padding: 4px; diplay: inline-block">X</a>
+                                                       <div class="oe_module_vignette">
+                                                           <img t-att-src="kanban_image('res.partner', 'image_1920', record.id.raw_value)" class="oe_avatar oe_kanban_avatar_smallbox"/>
+
+                                                           <div class="oe_module_desc">
+                                                                <field name="name"/>
+                                                           </div>
+                                                       </div>
+                                                   </div>
+                                               </t>
+                                           </templates>
+                                       </kanban>
+                                </field>
+                        </page>
+                            <page string ="Material List" >
+
+                            <field name="material_id">
+                                <tree>
+                                    <field  name="name"/>
+                                    <field  name="description"/>
+                                </tree>
+
+                            </field>
+                        </page>
+                              <page string ="Rating and Description">
+                                  <field name="rates">
+
+                                      <tree>
+                                          <field name="name"/>
+                                          <field name="address"/>
+
+                                          <field name="description"/>
+                                           <field name="rate" avg="Average of the rates"/>
+                                      </tree>
+                                  </field>
+                              </page>
+
+
+
+                        </notebook>
+                     </group>
+
+                </sheet>
+                 <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>`
+                    </div>
+            </form>
+          </field>
+    </record>
+
+      <record id="cms2_program_form_minimal_view" model="ir.ui.view">
+         <field name="name">program form</field>
+         <field name="model">cms2.program</field>
+         <field name="arch" type="xml">
+             <form>
+                 <group>
+<!--                     <field name="book_id" domain="[('state',-->
+<!--                    '=', 'available')]"/>-->
+<!--                     <field name="borrower_id"/>-->
+                     <field name="program_name"/>
+                     <field name="start_date"/>
+                        <field name="end_date"/>
+                        <field name="description"/>
+                 </group>
+             </form>
+        </field>
+      </record>
+
+
+      <record id="cms2_program_kanban_view" model="ir.ui.view">
+            <field name="name">cms2.program.kanban.view</field>
+            <field name="model">cms2.program</field>
+            <field name="arch" type="xml">
+
+                <kanban class="o_res_partner_kanban"  default_group_by="stage_id"
+                    quick_create_view="cms2.cms2_program_form_minimal_view"
+                     on_create="quick_create"
+
+                >
+                    <field name="stage_id" />
+                    <field name="activity_state"/>
+                      <field name="color" />
+                    <field name="id"/>
+                    <field name="program_name"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>
+                    <field name="image_1920"/>
+
+
+                         <progressbar field="popularity" colors='{"high": "success", "medium": "warning", "low": "danger"}'/>
+                    <templates>
+                        <t t-name="kanban-box">
+                              <div t-attf-class="#{kanban_color(record.color.raw_value)} oe_kanban_global_click">
+                                   <div class="o_dropdown_kanban dropdown">
+                                        <a class="dropdown-toggle o-no-caret btn" role="button" data-toggle="dropdown">
+                                            <span class="fa fa-ellipsis-v"/>
+                                        </a>
+                                        <div class="dropdown-menu" role="menu">
+                                            <t t-if="widget.editable">
+                                                <a role="menuitem" type="edit" class="dropdown-item">Edit</a>
+                                            </t>
+                                            <t t-if="widget.deletable">
+                                                <a role="menuitem" type="delete" class="dropdown-item">Delete</a>
+                                            </t>
+                                            <ul class="oe_kanban_colorpicker" data-field="color"/>
+                                        </div>
+                                    </div>
+                                  <div class="oe_kanban_content">
+                                       <div class="oe_kanban_card oe_kanban_global_click">
+                                            <div class="o_kanban_image">
+                                                 <img alt="Avatar" t-att-src="kanban_image('cms2.program', 'program_image',record.id.raw_value)"/>
+                                            </div>
+                                            <div class="oe_kanban_details">
+                                                <strong class="o_kanban_record_title">
+                                                    <field name="program_name"/>
+                                                </strong>
+
+                                            </div>
+                                            <span class="oe_kanban_list_many2many">
+                                                <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"/>
+                                            </span>
+                                            <div>
+                                                <field name="popularity" widget="priority"/>
+                                            </div>
+                                           <div>
+                                             <field name="activity_ids" widget="kanban_activity"/>
+                                            </div>
+                                       </div>
+                                  </div>
+                              </div>
+
+
+
+
+
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+      <record id="cms2_program_calendar_view" model="ir.ui.view">
+            <field name="name">cms2.program.calendar.view</field>
+            <field name="model">cms2.program</field>
+            <field name="arch" type="xml">
+<!--                <calendar-->
+<!--                        string="Program Details"-->
+<!--                        date_start="start_date"-->
+<!--                        date_stop="end_date"-->
+<!--                        event_open_popup="true"-->
+<!--                        mode="month"-->
+<!--                        color="status"-->
+<!--                        quick_add="False">-->
+<!--                    -->
+                         <calendar
+                        string="Program Details"
+                        date_start="start_date"
+                        date_stop="end_date"
+                        event_open_popup="true"
+                        mode="month"
+                        quick_add="False">
+                    <field name="program_name"/>
+
+                </calendar>
+            </field>
+        </record>
+  </data>
+</odoo>
